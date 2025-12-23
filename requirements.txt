@@ -4,3 +4,4 @@ requests
 wikipedia
 streamlit-calendar
 st-gsheets-connection
+google-auth

@@ -5,7 +5,7 @@ import requests
 import wikipedia
 from datetime import date, datetime, timedelta
 from streamlit_calendar import calendar
-from st_gsheets_connection import GSheetsConnection
+from streamlit_gsheets import GSheetsConnection
 
 # --- CONFIGURATION DE LA PAGE ---
 st.set_page_config(page_title="My Music 2026", page_icon="🎵", layout="wide")
