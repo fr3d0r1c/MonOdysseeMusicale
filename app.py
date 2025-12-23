@@ -133,6 +133,16 @@ if not df.empty:
     with tab2:
         st.header("📅 Planning 2026")
 
+        st.markdown("""
+            <style>
+                /* Force la hauteur du calendrier sur mobile */
+                .fc {
+                    height: 600px !important;
+                    min-height: 600px !important;
+                }
+            </style>
+        """, unsafe_allow_html=True)
+
         mode_visuel = st.radio(
             "Vue :", 
             ["📱 Liste (Mobile)", "🖥️ Grille (PC)"], 
@@ -164,25 +174,25 @@ if not df.empty:
             })
 
         if "Mobile" in mode_visuel:
-            initial_view = "listMonth" # Vue liste verticales
+            initial_view = "listMonth"
         else:
-            initial_view = "dayGridMonth" # Vue grille classique
+            initial_view = "dayGridMonth"
 
         calendar_options = {
             "initialDate": "2026-01-01",
             "locale": "fr",
             "headerToolbar": {
-                "left": "prev,next", # On enlève 'today' pour gagner de la place
+                "left": "prev,next", 
                 "center": "title",
-                "right": "" # On nettoie la droite
+                "right": "" 
             },
             "initialView": initial_view,
-            "height": "auto", # On laisse 'auto' mais on peut forcer '600px' si besoin
-            "contentHeight": 600 # Force la hauteur du contenu
+            "height": "600px", # <--- On force la hauteur ici aussi en texte
+            "handleWindowResize": True
         }
 
         if len(events) > 0:
-            calendar(events=events, options=calendar_options, key="my_calendar")
+            calendar(events=events, options=calendar_options, key=f"cal_{initial_view}") # Clé dynamique pour forcer le redessin
         else:
             st.warning("Aucun événement trouvé.")
 
