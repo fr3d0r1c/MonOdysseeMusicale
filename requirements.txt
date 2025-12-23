@@ -3,3 +3,4 @@ pandas
 requests
 wikipedia
 streamlit-calendar
+st-gsheets-connection
