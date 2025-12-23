@@ -168,7 +168,7 @@ def construire_bibliotheque():
         ("David Bowie", "The Rise and Fall of Ziggy Stardust", "Glam Rock"),
         ("Led Zeppelin", "Led Zeppelin IV", "Hard Rock"),
         ("Tracy Chapman", "Tracy Chapman", "Folk"),
-        ("Ms. Lauryn Hill", "The Miseducation of Lauryn Hill", "R&B/Rap") # Au cas où il n'y est pas
+        ("D'angelo", "Voodoo", "Neo-Soul")
     ]
     for art, alb, g in culture_additions: add(art, alb, g, "Culture Générale")
 
