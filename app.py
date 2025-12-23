@@ -133,6 +133,12 @@ if not df.empty:
     with tab2:
         st.header("📅 Planning 2026")
 
+        mode_visuel = st.radio(
+            "Vue :", 
+            ["📱 Liste (Mobile)", "🖥️ Grille (PC)"], 
+            horizontal=True
+        )
+
         events = []
         today_date = date.today()
 
@@ -143,35 +149,42 @@ if not df.empty:
                 continue
 
             if r['ecoute']:
-                color, title = "#28a745", f"✅ {r['artiste']}" # Vert
+                color, title = "#28a745", f"✅ {r['artiste']}"
             elif date_str < str(today_date):
-                color, title = "#dc3545", f"⚠️ {r['artiste']}" # Rouge
+                color, title = "#dc3545", f"⚠️ {r['artiste']}"
             else:
-                color, title = "#6c757d", f"🎵 {r['artiste']}" # Gris
+                color, title = "#6c757d", f"🎵 {r['artiste']}"
 
             events.append({
                 "title": title, 
                 "start": date_str,
-                "allDay": True, # Force l'affichage en bandeau journée
+                "allDay": True,
                 "backgroundColor": color, 
                 "borderColor": color
             })
+
+        if "Mobile" in mode_visuel:
+            initial_view = "listMonth" # Vue liste verticales
+        else:
+            initial_view = "dayGridMonth" # Vue grille classique
 
         calendar_options = {
             "initialDate": "2026-01-01",
             "locale": "fr",
             "headerToolbar": {
-                "left": "prev,next today",
+                "left": "prev,next", # On enlève 'today' pour gagner de la place
                 "center": "title",
-                "right": "dayGridMonth,listWeek"
+                "right": "" # On nettoie la droite
             },
-            "initialView": "dayGridMonth"
+            "initialView": initial_view,
+            "height": "auto", # On laisse 'auto' mais on peut forcer '600px' si besoin
+            "contentHeight": 600 # Force la hauteur du contenu
         }
 
         if len(events) > 0:
             calendar(events=events, options=calendar_options, key="my_calendar")
         else:
-            st.warning("Aucun événement trouvé. Vérifie ton fichier Google Sheets.")
+            st.warning("Aucun événement trouvé.")
 
     with tab3:
         st.header("🏆 Ton Classement & Avis")
