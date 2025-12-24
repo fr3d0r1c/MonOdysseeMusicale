@@ -3,256 +3,243 @@ import pandas as pd
 import json
 import requests
 import wikipedia
+import time
 from datetime import date, datetime, timedelta
 from streamlit_calendar import calendar
 from streamlit_gsheets import GSheetsConnection
 
-st.set_page_config(page_title="My Music 2026", page_icon="🎵", layout="wide")
+# --- 1. CONFIGURATION DE LA PAGE & CSS MOBILE ---
+st.set_page_config(
+    page_title="My Music 2026", 
+    page_icon="🎵", 
+    layout="wide",
+    initial_sidebar_state="collapsed" # Masque la sidebar sur mobile par défaut
+)
 
+# CSS pour transformer le site en "App"
+st.markdown("""
+    <style>
+        /* Réduit les marges sur mobile pour gagner de la place */
+        .block-container {
+            padding-top: 1rem !important;
+            padding-bottom: 2rem !important;
+        }
+        /* Centre les images des pochettes */
+        .stImage {
+            display: flex;
+            justify_content: center;
+        }
+        /* Force la hauteur du calendrier pour qu'il ne disparaisse pas sur mobile */
+        .fc {
+            height: 600px !important;
+            min-height: 600px !important;
+        }
+        /* Style des titres */
+        h1, h2, h3 {
+            text-align: center;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- 2. GESTION DES DONNÉES ---
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 def load_data():
-    """Charge les données depuis Google Sheets ou initialise via le JSON"""
+    """Charge les données et gère le fallback JSON si vide"""
     try:
         df = conn.read(worksheet="Database", ttl=0)
-
+        # Sécurité : Si le sheet est vide, on recharge le JSON de secours
         if df.empty or len(df) < 10:
             with open("journal_musical_ULTIMATE.json", 'r', encoding='utf-8') as f:
                 data = json.load(f)
             df = pd.DataFrame.from_dict(data, orient='index')
             df.index.name = 'date'
             df = df.reset_index()
-            if 'ecoute' not in df.columns: df['ecoute'] = False
-            if 'note' not in df.columns: df['note'] = 0 # On met 0 par défaut
-            if 'avis' not in df.columns: df['avis'] = ""
+            # Création des colonnes manquantes
+            for col in ['ecoute', 'note', 'avis']:
+                if col not in df.columns:
+                    df[col] = False if col == 'ecoute' else (0 if col == 'note' else "")
+            
             conn.update(worksheet="Database", data=df)
             st.cache_data.clear()
         return df
     except Exception as e:
-        st.error(f"Erreur de connexion : {e}")
+        st.error(f"Erreur connexion : {e}")
         return pd.DataFrame()
-    
+
 def save_data(df):
+    """Sauvegarde silencieuse"""
     conn.update(worksheet="Database", data=df)
     st.cache_data.clear()
 
 @st.cache_data
 def get_album_infos(artiste, album):
-    """Récupère Cover + Année + Histoire"""
+    """Récupère pochette et année via iTunes API"""
     infos = {
         "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/12in-Vinyl-LP-Record-Angle.jpg/640px-12in-Vinyl-LP-Record-Angle.jpg",
-        "year": "Année Inconnue",
-        "copyright": "",
-        "summary": "Pas d'infos Wikipédia trouvées.",
+        "year": "",
         "url_wiki": "#"
     }
     try:
         term = f"{artiste} {album}"
-        res = requests.get(f"https://itunes.apple.com/search?term={term}&entity=album&limit=1", timeout=5).json()
+        res = requests.get(f"https://itunes.apple.com/search?term={term}&entity=album&limit=1", timeout=3).json()
         if res['resultCount'] > 0:
             data = res['results'][0]
-            infos["cover"] = data['artworkUrl100'].replace("100x100", "600x600")
+            infos["cover"] = data['artworkUrl100'].replace("100x100", "600x600") # Haute qualité
             infos["year"] = data['releaseDate'][:4]
-            infos["copyright"] = data.get('copyright', '')
-    except: pass
-    try:
-        wikipedia.set_lang("fr")
-        results = wikipedia.search(f"{album} ({artiste})")
-        if results:
-            page = wikipedia.page(results[0])
-            infos["summary"] = page.summary[:600] + "..."
-            infos["url_wiki"] = page.url
     except: pass
     return infos
 
+# --- 3. INTERFACE UTILISATEUR ---
 df = load_data()
 
 if not df.empty:
+    # Nettoyage des types
     df['ecoute'] = df['ecoute'].fillna(False).astype(bool)
     df['note'] = pd.to_numeric(df['note'], errors='coerce').fillna(0).astype(int)
 
-    st.title("🎹 Mon Odyssée Musicale 2026")
+    # --- HEADER GAMIFIÉ ---
+    nb_ecoutes = df[df['ecoute'] == True].shape[0]
+    total = len(df)
+    pct = nb_ecoutes / total
 
-    with st.sidebar:
-        st.header("🔮 À venir")
-        df_todo = df[df['ecoute'] == False].sort_values('date')
-        if len(df_todo) >= 2:
-            next_up = df_todo.iloc[1]
-            next_infos = get_album_infos(next_up['artiste'], next_up['album'])
-            st.image(next_infos['cover'], use_container_width=True)
-            st.markdown(f"**{next_up['artiste']}**")
-            st.caption(f"{next_up['album']} ({next_up['date']})")
-        st.divider()
-        nb_ecoutes = df[df['ecoute'] == True].shape[0]
-        st.metric("Albums validés", f"{nb_ecoutes} / {len(df)}")
+    # Titre et barre de progression
+    st.title("🎹 Odyssée 2026")
+    st.progress(pct)
+    st.caption(f"Progression : **{nb_ecoutes}** albums écoutés sur **{total}** ({pct:.1%})")
 
+    # --- NAVIGATION PRINCIPALE ---
     tab1, tab2, tab3 = st.tabs(["🎧 À l'écoute", "📅 Calendrier", "🏆 Tier List"])
 
+    # ==========================================
+    # ONGLET 1 : LE PLAYER (Design Mobile First)
+    # ==========================================
     with tab1:
-        st.header("Ton prochain objectif")
+        df_todo = df[df['ecoute'] == False].sort_values('date')
+
         if not df_todo.empty:
             row = df_todo.iloc[0]
             idx = df[df['date'] == row['date']].index[0]
             infos = get_album_infos(row['artiste'], row['album'])
 
-            c1, c2 = st.columns([1, 2])
-            with c1:
-                st.image(infos["cover"], width=350)
-                st.caption(f"📅 Sortie : **{infos['year']}** | Prévu le : **{row['date']}**")
-                st.info(f"🏷️ Tag : {row['tag']}")
+            # 1. La Pochette (Centrale)
+            st.image(infos["cover"], width=300)
 
-            with c2:
-                st.markdown(f"# {row['artiste']}")
-                st.markdown(f"## *{row['album']}*")
-                st.caption(f"Genre : {row['genre']} | {infos['copyright']}")
-                
-                with st.expander("📖 Histoire & Contexte", expanded=True):
-                    st.write(infos["summary"])
-                    st.markdown(f"[Wiki]({infos['url_wiki']})")
+            # 2. Les Infos
+            st.markdown(f"## {row['artiste']}")
+            st.markdown(f"#### *{row['album']}* ({infos['year']})")
+            st.caption(f"📅 Prévu pour le : {row['date']} | 🏷️ {row['genre']}")
 
-                    st.divider()
+            # 3. Contexte (Replié par défaut pour sauver de la place)
+            with st.expander("📖 Lire l'histoire de l'album"):
+                try:
+                    wikipedia.set_lang("fr")
+                    wiki_res = wikipedia.search(f"{row['album']} {row['artiste']}")
+                    if wiki_res:
+                        page = wikipedia.page(wiki_res[0])
+                        st.write(page.summary[:600] + "...")
+                        st.markdown(f"[Lire la suite sur Wikipédia]({page.url})")
+                    else:
+                        st.info("Pas d'article Wikipédia trouvé.")
+                except:
+                    st.warning("Wikipédia injoignable pour le moment.")
 
-                    with st.form("notation_form"):
-                        st.write("### 📝 Noter cet album")
-                        note_val = st.feedback("stars")
-                        avis_val = st.text_area("Ton avis", placeholder="Prod, Flow, Ambiance...")
+            st.divider()
 
-                        if st.form_submit_button("✅ Valider l'écoute"):
-                            df.at[idx, 'ecoute'] = True
-                            final_note = (note_val + 1) if note_val is not None else 3
-                            df.at[idx, 'note'] = final_note
-                            df.at[idx, 'avis'] = avis_val
-                            save_data(df)
-                            st.balloons()
-                            st.success("Enregistré !")
-                            st.rerun()
-        
+            # 4. Zone de Notation (Encadrée)
+            with st.container(border=True):
+                with st.form("notation_form"):
+                    st.write("### 📝 Ta critique")
+
+                    # Note en étoiles (Feedback UI)
+                    note_val = st.feedback("stars")
+
+                    # Avis textuel
+                    avis_val = st.text_area("Ton ressenti", placeholder="Prod, flow, émotion...", height=100)
+
+                    # Bouton Large (Facile à cliquer sur mobile)
+                    submit = st.form_submit_button("✅ Valider l'écoute", use_container_width=True)
+
+                    if submit:
+                        # Sauvegarde
+                        df.at[idx, 'ecoute'] = True
+                        df.at[idx, 'note'] = (note_val + 1) if note_val is not None else 3
+                        df.at[idx, 'avis'] = avis_val
+                        save_data(df)
+                        
+                        # Feedback utilisateur (Toast + Ballons)
+                        st.toast(f"C'est noté ! {row['album']} ajouté à l'historique.", icon="💾")
+                        st.balloons()
+                        time.sleep(1.5) # Petite pause pour voir l'animation
+                        st.rerun()
+
         else:
-            st.success("🏆 Année terminée !")
+            st.success("🏆 INCROYABLE ! Tu as terminé le challenge 2026 !")
+            st.balloons()
 
+    # ==========================================
+    # ONGLET 2 : CALENDRIER (Hybride PC/Mobile)
+    # ==========================================
     with tab2:
-        st.header("📅 Planning 2026")
-
-        st.markdown("""
-            <style>
-                /* Force la hauteur du calendrier sur mobile */
-                .fc {
-                    height: 600px !important;
-                    min-height: 600px !important;
-                }
-            </style>
-        """, unsafe_allow_html=True)
-
-        mode_visuel = st.radio(
-            "Vue :", 
-            ["📱 Liste (Mobile)", "🖥️ Grille (PC)"], 
-            horizontal=True
-        )
+        # Toggle discret pour changer de vue
+        vue = st.radio("Affichage :", ["📱 Liste", "🖥️ Grille"], horizontal=True, label_visibility="collapsed")
 
         events = []
-        today_date = date.today()
+        today_str = str(date.today())
 
         for _, r in df.iterrows():
-            try:
-                date_str = pd.to_datetime(r['date']).strftime("%Y-%m-%d")
-            except:
-                continue
+            try: d_str = pd.to_datetime(r['date']).strftime("%Y-%m-%d")
+            except: continue
 
-            if r['ecoute']:
-                color, title = "#28a745", f"✅ {r['artiste']}"
-            elif date_str < str(today_date):
-                color, title = "#dc3545", f"⚠️ {r['artiste']}"
-            else:
-                color, title = "#6c757d", f"🎵 {r['artiste']}"
+            if r['ecoute']: color, title = "#28a745", f"✅ {r['artiste']}"
+            elif d_str < today_str: color, title = "#dc3545", f"⚠️ {r['artiste']}"
+            else: color, title = "#6c757d", f"🎵 {r['artiste']}"
 
-            events.append({
-                "title": title, 
-                "start": date_str,
-                "allDay": True,
-                "backgroundColor": color, 
-                "borderColor": color
-            })
+            events.append({"title": title, "start": d_str, "allDay": True, "backgroundColor": color, "borderColor": color})
 
-        if "Mobile" in mode_visuel:
-            initial_view = "listMonth"
-        else:
-            initial_view = "dayGridMonth"
+        # Configuration selon le choix (Liste pour mobile, Grille pour PC)
+        mode = "listMonth" if "Liste" in vue else "dayGridMonth"
 
-        calendar_options = {
+        calendar(events=events, options={
             "initialDate": "2026-01-01",
             "locale": "fr",
-            "headerToolbar": {
-                "left": "prev,next", 
-                "center": "title",
-                "right": "" 
-            },
-            "initialView": initial_view,
-            "height": "600px", # <--- On force la hauteur ici aussi en texte
-            "handleWindowResize": True
-        }
+            "headerToolbar": {"left": "prev,next", "center": "title", "right": ""},
+            "initialView": mode,
+            "height": "600px" # Force la hauteur pour mobile
+        }, key=f"cal_{mode}")
 
-        if len(events) > 0:
-            calendar(events=events, options=calendar_options, key=f"cal_{initial_view}") # Clé dynamique pour forcer le redessin
-        else:
-            st.warning("Aucun événement trouvé.")
-
+    # ==========================================
+    # ONGLET 3 : TIER LIST (Editable)
+    # ==========================================
     with tab3:
-        st.header("🏆 Ton Classement & Avis")
-        st.caption("Clique sur un album pour relire ton avis ou modifier ta note.")
-
         df_ranked = df[df['ecoute'] == True]
 
         if df_ranked.empty:
-            st.info("Note tes premiers albums pour remplir le classement !")
+            st.info("Les albums notés apparaîtront ici.")
         else:
-            tiers = [
-                (5, "💎 S-TIER (Masterclass)", "🚨"),
-                (4, "🔥 A-TIER (Excellent)", "🟠"),
-                (3, "✅ B-TIER (Bon)", "🟡"),
-                (2, "😐 C-TIER (Moyen)", "🟢"),
-                (1, "💩 D-TIER (Déception)", "🟤")
-            ]
+            tiers = [(5, "S-TIER", "🚨"), (4, "A-TIER", "🟠"), (3, "B-TIER", "🟡"), (2, "C-TIER", "🟢"), (1, "D-TIER", "🟤")]
 
             for note, label, icon in tiers:
-                current_tier = df_ranked[df_ranked['note'] == note]
-
-                if not current_tier.empty:
-                    st.divider()
+                sub_df = df_ranked[df_ranked['note'] == note]
+                if not sub_df.empty:
                     st.subheader(f"{icon} {label}")
-
-                    for i, row in current_tier.iterrows():
+                    for _, row in sub_df.iterrows():
                         real_idx = df[df['date'] == row['date']].index[0]
 
-                        label_expander = f"{row['artiste']} - {row['album']}"
-
-                        with st.expander(label_expander):
-                            infos = get_album_infos(row['artiste'], row['album'])
-
-                            col_img, col_form = st.columns([1, 2])
-
-                            with col_img:
-                                st.image(infos['cover'], width=120)
-                                st.caption(f"Sortie : {infos['year']}")
-
-                            with col_form:
-                                if row['avis']:
-                                    st.markdown(f"**Ton avis :**")
-                                    st.info(f"_{row['avis']}_")
-                                else:
-                                    st.write("Pas d'avis rédigé.")
-
-                                st.write("---")
-
-                                with st.form(key=f"edit_form_{real_idx}"):
-                                    st.write("✏️ **Modifier**")
-
-                                    new_note = st.slider("Note", 1, 5, int(row['note']), key=f"slider_{real_idx}")
-
-                                    new_avis = st.text_area("Mettre à jour l'avis", value=row['avis'], height=100, key=f"text_{real_idx}")
-
-                                    if st.form_submit_button("💾 Enregistrer les changements"):
-                                        df.at[real_idx, 'note'] = new_note
-                                        df.at[real_idx, 'avis'] = new_avis
+                        # Expander pour garder la liste propre
+                        with st.expander(f"{row['artiste']} - {row['album']}"):
+                            c1, c2 = st.columns([1, 2])
+                            with c1:
+                                inf = get_album_infos(row['artiste'], row['album'])
+                                st.image(inf['cover'], width=100)
+                            with c2:
+                                with st.form(key=f"edit_{real_idx}"):
+                                    # Edition de la note et de l'avis
+                                    new_n = st.slider("Note", 1, 5, int(row['note']))
+                                    new_a = st.text_area("Avis", value=row['avis'])
+                                    if st.form_submit_button("💾 Mettre à jour"):
+                                        df.at[real_idx, 'note'] = new_n
+                                        df.at[real_idx, 'avis'] = new_a
                                         save_data(df)
-                                        st.success("Mise à jour effectuée !")
+                                        st.toast("Modification enregistrée !")
                                         st.rerun()
