@@ -1,1787 +1,5 @@
 {
     "2026-01-01": {
-        "artiste": "Fela Kuti",
-        "album": "Expensive Shit",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-02": {
-        "artiste": "Snoop Dogg",
-        "album": "Tha Last Meal",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-03": {
-        "artiste": "Queen",
-        "album": "A Night at the Opera",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-04": {
-        "artiste": "Burna Boy",
-        "album": "Love, Damini",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-05": {
-        "artiste": "Beyoncé",
-        "album": "RENAISSANCE",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-06": {
-        "artiste": "The Bee Gees",
-        "album": "Main Course",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-07": {
-        "artiste": "Burna Boy",
-        "album": "L.I.F.E",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-08": {
-        "artiste": "The Bee Gees",
-        "album": "Spirits Having Flown",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-09": {
-        "artiste": "The Beatles",
-        "album": "Yellow Submarine",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-10": {
-        "artiste": "Kaaris",
-        "album": "Okou Gnakouri",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-11": {
-        "artiste": "Kaaris",
-        "album": "Or Noir",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-12": {
-        "artiste": "Hamza",
-        "album": "1994",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-13": {
-        "artiste": "Michael Jackson",
-        "album": "Off the Wall",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-14": {
-        "artiste": "Kali Uchis",
-        "album": "Red Moon In Venus",
-        "genre": "Latin/Soul",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-15": {
-        "artiste": "Bad Bunny",
-        "album": "Nadie Sabe Lo Que Va a Pasar Mañana",
-        "genre": "Latin/Trap",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-16": {
-        "artiste": "The Beatles",
-        "album": "Magical Mystery Tour",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-17": {
-        "artiste": "Alpha Wann",
-        "album": "Alph Lauren 2",
-        "genre": "Rap FR",
-        "tag": "Technique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-18": {
-        "artiste": "The Weeknd",
-        "album": "My Dear Melancholy,",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-19": {
-        "artiste": "Taylor Swift",
-        "album": "Speak Now (Taylor's Version)",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-20": {
-        "artiste": "Kanye West",
-        "album": "Vultures 2",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-21": {
-        "artiste": "Mac Miller",
-        "album": "Circles",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-22": {
-        "artiste": "The Bee Gees",
-        "album": "E.S.P.",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-23": {
-        "artiste": "Taylor Swift",
-        "album": "Red (Taylor's Version)",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-24": {
-        "artiste": "PNL",
-        "album": "Que La Famille",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-25": {
-        "artiste": "Kaaris",
-        "album": "Or Noir Part II",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-26": {
-        "artiste": "SCH",
-        "album": "autobahn",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-27": {
-        "artiste": "Marvin Gaye",
-        "album": "What's Going On",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-28": {
-        "artiste": "Damso",
-        "album": "Beyah",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-29": {
-        "artiste": "Drake",
-        "album": "For All The Dogs",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-30": {
-        "artiste": "Frank Ocean",
-        "album": "Endless",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-01-31": {
-        "artiste": "Miriam Makeba",
-        "album": "Pata Pata",
-        "genre": "Jazz/Folk",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-01": {
-        "artiste": "Pink Floyd",
-        "album": "The Dark Side of the Moon",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-02": {
-        "artiste": "A$AP Rocky",
-        "album": "Don't Be Dumb",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-03": {
-        "artiste": "The Beatles",
-        "album": "A Hard Day's Night",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-04": {
-        "artiste": "The Beatles",
-        "album": "Sgt. Pepper's Lonely Hearts Club Band",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-05": {
-        "artiste": "Franco & TPOK Jazz",
-        "album": "Mario",
-        "genre": "Rumba Congolaise",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-06": {
-        "artiste": "SZA",
-        "album": "Ctrl",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-07": {
-        "artiste": "Pink Floyd",
-        "album": "Wish You Were Here",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-08": {
-        "artiste": "Snoop Dogg",
-        "album": "BODR",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-09": {
-        "artiste": "Ayra Starr",
-        "album": "19 & Dangerous",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-10": {
-        "artiste": "Booba",
-        "album": "Futur",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-11": {
-        "artiste": "Tems",
-        "album": "Born in the Wild",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-12": {
-        "artiste": "Kendrick Lamar",
-        "album": "good kid, m.A.A.d city",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-13": {
-        "artiste": "Denzel Curry",
-        "album": "ZUU",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-14": {
-        "artiste": "Portishead",
-        "album": "Dummy",
-        "genre": "Trip-Hop",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-15": {
-        "artiste": "Fally Ipupa",
-        "album": "Tokooos",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-16": {
-        "artiste": "Billie Eilish",
-        "album": "HIT ME HARD AND SOFT",
-        "genre": "Pop Alt",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-17": {
-        "artiste": "Fela Kuti",
-        "album": "Roforofo Fight",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-18": {
-        "artiste": "Drake",
-        "album": "More Life",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-19": {
-        "artiste": "Billie Eilish",
-        "album": "dont smile at me",
-        "genre": "Pop Alt",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-20": {
-        "artiste": "Drake",
-        "album": "Nothing Was the Same",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-21": {
-        "artiste": "Jay-Z",
-        "album": "In My Lifetime, Vol. 1",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-22": {
-        "artiste": "Kali Uchis",
-        "album": "Por Vida",
-        "genre": "Latin/Soul",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-23": {
-        "artiste": "Prince",
-        "album": "Diamonds and Pearls",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-24": {
-        "artiste": "Billie Eilish",
-        "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-        "genre": "Pop Alt",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-25": {
-        "artiste": "Tame Impala",
-        "album": "The Slow Rush",
-        "genre": "Psych Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-26": {
-        "artiste": "Rihanna",
-        "album": "ANTI",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-27": {
-        "artiste": "Rema",
-        "album": "Rave & Roses",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-02-28": {
-        "artiste": "Tame Impala",
-        "album": "Lonerism",
-        "genre": "Psych Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-01": {
-        "artiste": "Pink Floyd",
-        "album": "The Piper at the Gates of Dawn",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-02": {
-        "artiste": "Damso",
-        "album": "QALF infinity",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-03": {
-        "artiste": "Taylor Swift",
-        "album": "Lover",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-04": {
-        "artiste": "JID",
-        "album": "DiCaprio 2",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-05": {
-        "artiste": "Tyler, The Creator",
-        "album": "Goblin",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-06": {
-        "artiste": "Travis Scott",
-        "album": "Birds in the Trap Sing McKnight",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-07": {
-        "artiste": "Denzel Curry",
-        "album": "Imperial",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-08": {
-        "artiste": "Koffi Olomidé",
-        "album": "Loi",
-        "genre": "Ndombolo",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-09": {
-        "artiste": "The Doors",
-        "album": "The Doors",
-        "genre": "Rock Psyche",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-10": {
-        "artiste": "Burna Boy",
-        "album": "Outside",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-11": {
-        "artiste": "Kendrick Lamar",
-        "album": "Section.80",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-12": {
-        "artiste": "J. Cole",
-        "album": "4 Your Eyez Only",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-13": {
-        "artiste": "Travis Scott",
-        "album": "Rodeo",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-14": {
-        "artiste": "Michael Jackson",
-        "album": "Bad",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-15": {
-        "artiste": "Burna Boy",
-        "album": "I Told Them...",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-16": {
-        "artiste": "Justice",
-        "album": "Cross",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-17": {
-        "artiste": "Billie Eilish",
-        "album": "Happier Than Ever",
-        "genre": "Pop Alt",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-18": {
-        "artiste": "A$AP Rocky",
-        "album": "AT.LONG.LAST.A$AP",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-19": {
-        "artiste": "The Bee Gees",
-        "album": "Saturday Night Fever",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-20": {
-        "artiste": "The Beatles",
-        "album": "With the Beatles",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-21": {
-        "artiste": "Beyoncé",
-        "album": "Dangerously in Love",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-22": {
-        "artiste": "Mac Miller",
-        "album": "Swimming",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-23": {
-        "artiste": "Kanye West",
-        "album": "Graduation",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-24": {
-        "artiste": "Jay-Z",
-        "album": "American Gangster",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-25": {
-        "artiste": "Radiohead",
-        "album": "OK Computer",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-26": {
-        "artiste": "Jay-Z",
-        "album": "4:44",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-27": {
-        "artiste": "La Fève",
-        "album": "24",
-        "genre": "Rap FR",
-        "tag": "New Wave",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-28": {
-        "artiste": "Beyoncé",
-        "album": "4",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-29": {
-        "artiste": "Kali Uchis",
-        "album": "Orquídeas",
-        "genre": "Latin/Soul",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-30": {
-        "artiste": "Uncle Waffles",
-        "album": "Red Dragon",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-03-31": {
-        "artiste": "Drake",
-        "album": "Certified Lover Boy",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-01": {
-        "artiste": "SCH",
-        "album": "Deo Favente",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-02": {
-        "artiste": "Kanye West",
-        "album": "Donda",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-03": {
-        "artiste": "Stevie Wonder",
-        "album": "Songs in the Key of Life",
-        "genre": "Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-04": {
-        "artiste": "PNL",
-        "album": "Dans la légende",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-05": {
-        "artiste": "Damso",
-        "album": "Ipséité",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-06": {
-        "artiste": "Tyler, The Creator",
-        "album": "Wolf",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-07": {
-        "artiste": "Nekfeu",
-        "album": "Expansion",
-        "genre": "Rap FR",
-        "tag": "Classique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-08": {
-        "artiste": "Booba",
-        "album": "Ultra",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-09": {
-        "artiste": "Hamza",
-        "album": "Paradise",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-10": {
-        "artiste": "Youssou N'Dour",
-        "album": "Immigrés",
-        "genre": "Mbalax",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-11": {
-        "artiste": "Burna Boy",
-        "album": "On a Spaceship",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-12": {
-        "artiste": "The Weeknd",
-        "album": "Starboy",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-13": {
-        "artiste": "The Beatles",
-        "album": "Revolver",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-14": {
-        "artiste": "Etta James",
-        "album": "At Last!",
-        "genre": "Soul",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-15": {
-        "artiste": "Travis Scott",
-        "album": "Utopia",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-16": {
-        "artiste": "Playboi Carti",
-        "album": "I AM MUSIC",
-        "genre": "Rap US",
-        "tag": "Rage/Trap",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-17": {
-        "artiste": "A$AP Rocky",
-        "album": "LIVE.LOVE.A$AP",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-18": {
-        "artiste": "Kendrick Lamar",
-        "album": "To Pimp A Butterfly",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-19": {
-        "artiste": "Michael Jackson",
-        "album": "Dangerous",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-20": {
-        "artiste": "La Fève",
-        "album": "ERRR",
-        "genre": "Rap FR",
-        "tag": "New Wave",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-21": {
-        "artiste": "Booba",
-        "album": "Panthéon",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-22": {
-        "artiste": "Gorillaz",
-        "album": "Demon Days",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-23": {
-        "artiste": "Asake",
-        "album": "Mr. Money With The Vibe",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-24": {
-        "artiste": "J. Cole",
-        "album": "KOD",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-25": {
-        "artiste": "SCH",
-        "album": "JVLIVS II",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-26": {
-        "artiste": "Kanye West",
-        "album": "The College Dropout",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-27": {
-        "artiste": "Davido",
-        "album": "A Good Time",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-28": {
-        "artiste": "Jay-Z",
-        "album": "The Dynasty",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-29": {
-        "artiste": "Magic System",
-        "album": "1er Gaou",
-        "genre": "Zouglou",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-04-30": {
-        "artiste": "Booba",
-        "album": "0.9",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-01": {
-        "artiste": "Orchestra Baobab",
-        "album": "Pirate's Choice",
-        "genre": "Afro-Cubain",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-02": {
-        "artiste": "SCH",
-        "album": "A7",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-03": {
-        "artiste": "Pink Floyd",
-        "album": "The Final Cut",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-04": {
-        "artiste": "Frank Ocean",
-        "album": "nostalgia, ultra",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-05": {
-        "artiste": "Kali Uchis",
-        "album": "Sin Miedo",
-        "genre": "Latin/Soul",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-06": {
-        "artiste": "Manu Dibango",
-        "album": "Soul Makossa",
-        "genre": "Makossa",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-07": {
-        "artiste": "Prince",
-        "album": "Controversy",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-08": {
-        "artiste": "A$AP Rocky",
-        "album": "Testing",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-09": {
-        "artiste": "Kanye West",
-        "album": "My Beautiful Dark Twisted Fantasy",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-10": {
-        "artiste": "Ariana Grande",
-        "album": "My Everything",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-11": {
-        "artiste": "The Weeknd",
-        "album": "Trilogy",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-12": {
-        "artiste": "Denzel Curry",
-        "album": "Melt My Eyez See Your Future",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-13": {
-        "artiste": "Prince",
-        "album": "1999",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-14": {
-        "artiste": "Prince",
-        "album": "Prince",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-15": {
-        "artiste": "Jay-Z",
-        "album": "The Blueprint 3",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-16": {
-        "artiste": "Wu-Tang Clan",
-        "album": "Enter the Wu-Tang",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-17": {
-        "artiste": "Stevie Wonder",
-        "album": "Hotter than July",
-        "genre": "Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-18": {
-        "artiste": "Tyler, The Creator",
-        "album": "Bastard",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-19": {
-        "artiste": "Pink Floyd",
-        "album": "The Wall",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-20": {
-        "artiste": "Fela Kuti",
-        "album": "Zombie",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-21": {
-        "artiste": "Kali Uchis",
-        "album": "Sincerely",
-        "genre": "Latin/Soul",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-22": {
-        "artiste": "Kaaris",
-        "album": "2.7.0",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-23": {
-        "artiste": "Bad Bunny",
-        "album": "Un Verano Sin Ti",
-        "genre": "Latin/Trap",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-24": {
-        "artiste": "Clipse",
-        "album": "Hell Hath No Fury",
-        "genre": "Rap US",
-        "tag": "Classique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-25": {
-        "artiste": "Pink Floyd",
-        "album": "A Momentary Lapse of Reason",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-26": {
-        "artiste": "The Beatles",
-        "album": "Help!",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-27": {
-        "artiste": "Prince",
-        "album": "Dirty Mind",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-28": {
-        "artiste": "Kaaris",
-        "album": "SVR",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-29": {
-        "artiste": "Drake",
-        "album": "If You're Reading This It's Too Late",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-30": {
-        "artiste": "Fireboy DML",
-        "album": "Laughter, Tears & Goosebumps",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-05-31": {
-        "artiste": "Beyoncé",
-        "album": "B'Day",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-01": {
-        "artiste": "A$AP Rocky",
-        "album": "LONG.LIVE.A$AP",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-02": {
-        "artiste": "Kendrick Lamar",
-        "album": "DAMN.",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-03": {
-        "artiste": "La Fève",
-        "album": "KOLAF",
-        "genre": "Rap FR",
-        "tag": "New Wave",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-04": {
-        "artiste": "Tyla",
-        "album": "TYLA",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-05": {
-        "artiste": "Snoop Dogg",
-        "album": "Missionary",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-06": {
-        "artiste": "J. Cole",
-        "album": "2014 Forest Hills Drive",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-07": {
-        "artiste": "Pink Floyd",
-        "album": "Atom Heart Mother",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-08": {
-        "artiste": "Michael Jackson",
-        "album": "Thriller",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-09": {
-        "artiste": "Beyoncé",
-        "album": "I Am... Sasha Fierce",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-10": {
-        "artiste": "The Beatles",
-        "album": "Rubber Soul",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-11": {
-        "artiste": "Cesária Évora",
-        "album": "Miss Perfumado",
-        "genre": "Morna",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-12": {
-        "artiste": "Freddie Gibbs",
-        "album": "Bandana",
-        "genre": "Rap US",
-        "tag": "Classique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-13": {
-        "artiste": "Rihanna",
-        "album": "Unapologetic",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-14": {
-        "artiste": "SZA",
-        "album": "Lana",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-15": {
-        "artiste": "SCH",
-        "album": "JVLIVS III",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-16": {
-        "artiste": "Tyler, The Creator",
-        "album": "Flower Boy",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-17": {
-        "artiste": "The Beatles",
-        "album": "Abbey Road",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-18": {
-        "artiste": "Wizkid",
-        "album": "More Love, Less Ego",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-19": {
-        "artiste": "Ayra Starr",
-        "album": "The Year I Turned 21",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-20": {
-        "artiste": "Snoop Dogg",
-        "album": "Da Game Is to Be Sold...",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-21": {
-        "artiste": "Booba",
-        "album": "Trône",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-22": {
-        "artiste": "Asake",
-        "album": "Lungu Boy",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-23": {
-        "artiste": "Drake",
-        "album": "Views",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-24": {
-        "artiste": "Mac Miller",
-        "album": "The Divine Feminine",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-25": {
-        "artiste": "Prince",
-        "album": "For You",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-26": {
-        "artiste": "Pink Floyd",
-        "album": "Obscured by Clouds",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-27": {
-        "artiste": "Taylor Swift",
-        "album": "Taylor Swift",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-28": {
-        "artiste": "Snoop Dogg",
-        "album": "No Limit Top Dogg",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-29": {
-        "artiste": "Amy Winehouse",
-        "album": "Back to Black",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-06-30": {
-        "artiste": "Denzel Curry",
-        "album": "TA13OO",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-01": {
-        "artiste": "PNL",
-        "album": "Deux frères",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-02": {
-        "artiste": "Miles Davis",
-        "album": "Kind of Blue",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-03": {
-        "artiste": "Fleetwood Mac",
-        "album": "Rumours",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-04": {
-        "artiste": "Pink Floyd",
-        "album": "More",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-05": {
-        "artiste": "Pink Floyd",
-        "album": "Meddle",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-06": {
-        "artiste": "Ariana Grande",
-        "album": "Yours Truly",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-07": {
-        "artiste": "Burna Boy",
-        "album": "African Giant",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-08": {
-        "artiste": "Rihanna",
-        "album": "Talk That Talk",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-09": {
-        "artiste": "JID",
-        "album": "God Does Like Ugly",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-10": {
-        "artiste": "Joy Division",
-        "album": "Unknown Pleasures",
-        "genre": "Post-Punk",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-11": {
-        "artiste": "Taylor Swift",
-        "album": "folklore",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-12": {
-        "artiste": "Laylow",
-        "album": "Trinity",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-13": {
-        "artiste": "Rema",
-        "album": "HEIS",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-14": {
-        "artiste": "Taylor Swift",
-        "album": "1989 (Taylor's Version)",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-15": {
-        "artiste": "Kali Uchis",
-        "album": "Isolation",
-        "genre": "Latin/Soul",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-16": {
-        "artiste": "SCH",
-        "album": "Julius Prequel",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-17": {
-        "artiste": "Jimi Hendrix",
-        "album": "Are You Experienced",
-        "genre": "Rock Psyche",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-18": {
         "artiste": "Kendrick Lamar",
         "album": "untitled unmastered.",
         "genre": "Rap US",
@@ -1790,250 +8,70 @@
         "note": null,
         "avis": ""
     },
-    "2026-07-19": {
+    "2026-01-02": {
+        "artiste": "Kanye West",
+        "album": "Yeezus",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-03": {
+        "artiste": "Laylow",
+        "album": "L'Étrange Histoire de Mr. Anderson",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-04": {
+        "artiste": "Booba",
+        "album": "Lunatic",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-05": {
+        "artiste": "Jay-Z",
+        "album": "The Black Album",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-06": {
         "artiste": "Prince",
-        "album": "Parade",
+        "album": "1999",
         "genre": "Pop/Funk",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-07-20": {
-        "artiste": "Taylor Swift",
-        "album": "Fearless (Taylor's Version)",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-21": {
-        "artiste": "Rihanna",
-        "album": "Loud",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-22": {
-        "artiste": "Frank Ocean",
-        "album": "Blonde",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-23": {
-        "artiste": "Pink Floyd",
-        "album": "Animals",
-        "genre": "Rock Prog",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-24": {
-        "artiste": "Alpha Wann",
-        "album": "Alph Lauren",
-        "genre": "Rap FR",
-        "tag": "Technique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-25": {
-        "artiste": "D'angelo",
-        "album": "Voodoo",
-        "genre": "Neo-Soul",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-26": {
-        "artiste": "The Weeknd",
-        "album": "Beauty Behind the Madness",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-27": {
-        "artiste": "Bad Bunny",
-        "album": "YHLQMDLG",
-        "genre": "Latin/Trap",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-28": {
-        "artiste": "Drake",
-        "album": "Thank Me Later",
+    "2026-01-07": {
+        "artiste": "Travis Scott",
+        "album": "Birds in the Trap Sing McKnight",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-07-29": {
-        "artiste": "Booba",
-        "album": "Mauvais Oeil (Lunatic)",
-        "genre": "Rap FR",
+    "2026-01-08": {
+        "artiste": "Beyoncé",
+        "album": "BEYONCÉ",
+        "genre": "R&B/Pop",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-07-30": {
-        "artiste": "Drake",
-        "album": "Scorpion",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-07-31": {
-        "artiste": "Burna Boy",
-        "album": "Twice As Tall",
-        "genre": "Afro-Fusion",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-01": {
-        "artiste": "Freddie Gibbs",
-        "album": "Alfredo 2",
-        "genre": "Rap US",
-        "tag": "Nouveauté",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-02": {
-        "artiste": "Nekfeu",
-        "album": "Cyborg",
-        "genre": "Rap FR",
-        "tag": "Classique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-03": {
-        "artiste": "SCH",
-        "album": "Rooftop",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-04": {
-        "artiste": "The Weeknd",
-        "album": "Kiss Land",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-05": {
-        "artiste": "Tyler, The Creator",
-        "album": "Call Me If You Get Lost",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-06": {
-        "artiste": "Tame Impala",
-        "album": "Innerspeaker",
-        "genre": "Psych Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-07": {
-        "artiste": "Drake",
-        "album": "Take Care",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-08": {
-        "artiste": "Ariana Grande",
-        "album": "Sweetener",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-09": {
-        "artiste": "Aretha Franklin",
-        "album": "I Never Loved a Man the Way I Love You",
-        "genre": "Soul",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-10": {
-        "artiste": "Nekfeu",
-        "album": "Feu",
-        "genre": "Rap FR",
-        "tag": "Classique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-11": {
-        "artiste": "Rihanna",
-        "album": "Good Girl Gone Bad",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-12": {
-        "artiste": "Alpha Wann",
-        "album": "don dada mixtape vol 1",
-        "genre": "Rap FR",
-        "tag": "Technique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-13": {
-        "artiste": "Damso",
-        "album": "J'ai Menti",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-14": {
-        "artiste": "Michael Jackson",
-        "album": "HIStory: Past, Present and Future, Book I",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-15": {
+    "2026-01-09": {
         "artiste": "The Weeknd",
         "album": "Hurry Up Tomorrow",
         "genre": "Pop/R&B",
@@ -2042,151 +80,331 @@
         "note": null,
         "avis": ""
     },
-    "2026-08-16": {
-        "artiste": "Mac Miller",
-        "album": "Watching Movies with the Sound Off",
-        "genre": "Rap US",
+    "2026-01-10": {
+        "artiste": "Billie Eilish",
+        "album": "Happier Than Ever",
+        "genre": "Pop Alt",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-17": {
-        "artiste": "The Weeknd",
-        "album": "After Hours",
-        "genre": "Pop/R&B",
+    "2026-01-11": {
+        "artiste": "PNL",
+        "album": "Que La Famille",
+        "genre": "Rap FR",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-18": {
-        "artiste": "David Bowie",
-        "album": "The Rise and Fall of Ziggy Stardust",
-        "genre": "Glam Rock",
-        "tag": "Culture Générale",
+    "2026-01-12": {
+        "artiste": "The Bee Gees",
+        "album": "One",
+        "genre": "Disco/Pop",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-19": {
+    "2026-01-13": {
+        "artiste": "Burna Boy",
+        "album": "L.I.F.E",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-14": {
         "artiste": "Wizkid",
-        "album": "Superstar",
+        "album": "More Love, Less Ego",
         "genre": "Afro/World",
         "tag": "Vibe Afro",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-20": {
+    "2026-01-15": {
         "artiste": "The Beatles",
-        "album": "Please Please Me",
+        "album": "Beatles for Sale",
         "genre": "Rock",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-21": {
-        "artiste": "Mac Miller",
-        "album": "Faces",
+    "2026-01-16": {
+        "artiste": "Tyler, The Creator",
+        "album": "Wolf",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-22": {
-        "artiste": "Stevie Wonder",
-        "album": "Music of My Mind",
-        "genre": "Soul",
+    "2026-01-17": {
+        "artiste": "Michael Jackson",
+        "album": "Xscape",
+        "genre": "Pop/Soul",
         "tag": "Légende",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-23": {
-        "artiste": "Nekfeu",
-        "album": "Les Étoiles Vagabondes",
-        "genre": "Rap FR",
-        "tag": "Classique",
+    "2026-01-18": {
+        "artiste": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Classique",
+        "tag": "Culture",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-24": {
-        "artiste": "Jay-Z",
-        "album": "Vol. 3... Life and Times of S. Carter",
-        "genre": "Rap US",
+    "2026-01-19": {
+        "artiste": "The Bee Gees",
+        "album": "Children of the World",
+        "genre": "Disco/Pop",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-25": {
-        "artiste": "Snoop Dogg",
-        "album": "Doggystyle",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-26": {
-        "artiste": "Ali Farka Touré",
-        "album": "Talking Timbuktu",
-        "genre": "Blues Malien",
+    "2026-01-20": {
+        "artiste": "Magic System",
+        "album": "1er Gaou",
+        "genre": "Zouglou",
         "tag": "Légende Afro",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-27": {
-        "artiste": "Snoop Dogg",
-        "album": "R&G",
+    "2026-01-21": {
+        "artiste": "Freddie Gibbs",
+        "album": "Bandana",
+        "genre": "Rap US",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-22": {
+        "artiste": "Drake",
+        "album": "Nothing Was the Same",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-28": {
-        "artiste": "Snoop Dogg",
-        "album": "Tha Blue Carpet Treatment",
+    "2026-01-23": {
+        "artiste": "Asake",
+        "album": "Lungu Boy",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-24": {
+        "artiste": "Mac Miller",
+        "album": "Swimming",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-29": {
+    "2026-01-25": {
+        "artiste": "SZA",
+        "album": "Z (EP)",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-26": {
+        "artiste": "Nas",
+        "album": "Illmatic",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-27": {
+        "artiste": "Jay-Z",
+        "album": "The Dynasty",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-28": {
+        "artiste": "The Beatles",
+        "album": "Magical Mystery Tour",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-29": {
+        "artiste": "Taylor Swift",
+        "album": "Midnights",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-30": {
+        "artiste": "Taylor Swift",
+        "album": "folklore",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-01-31": {
         "artiste": "Pink Floyd",
-        "album": "The Endless River",
+        "album": "Animals",
         "genre": "Rock Prog",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-08-30": {
-        "artiste": "Kaaris",
-        "album": "Dozo",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-08-31": {
-        "artiste": "Snoop Dogg",
-        "album": "Bush",
+    "2026-02-01": {
+        "artiste": "JID",
+        "album": "The Forever Story",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-09-01": {
+    "2026-02-02": {
+        "artiste": "Nekfeu",
+        "album": "Expansion",
+        "genre": "Rap FR",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-03": {
+        "artiste": "Daft Punk",
+        "album": "Alive 1997",
+        "genre": "Electro",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-04": {
+        "artiste": "Booba",
+        "album": "Nero Nemesis",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-05": {
+        "artiste": "Jay-Z",
+        "album": "Reasonable Doubt",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-06": {
+        "artiste": "Bad Bunny",
+        "album": "El Último Tour Del Mundo",
+        "genre": "Latin/Trap",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-07": {
+        "artiste": "Alpha Wann",
+        "album": "Alph Lauren 2",
+        "genre": "Rap FR",
+        "tag": "Technique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-08": {
+        "artiste": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop/Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-09": {
+        "artiste": "Damso",
+        "album": "QALF infinity",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-10": {
+        "artiste": "Prince",
+        "album": "Musicology",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-11": {
+        "artiste": "De La Soul",
+        "album": "3 Feet High and Rising",
+        "genre": "Rap US",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-12": {
+        "artiste": "Mac Miller",
+        "album": "Circles",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-13": {
+        "artiste": "A$AP Rocky",
+        "album": "AT.LONG.LAST.A$AP",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-14": {
+        "artiste": "Drake",
+        "album": "Certified Lover Boy",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-15": {
         "artiste": "Prince",
         "album": "Sign o' the Times",
         "genre": "Pop/Funk",
@@ -2195,52 +413,241 @@
         "note": null,
         "avis": ""
     },
-    "2026-09-02": {
-        "artiste": "The Beatles",
-        "album": "Let It Be",
-        "genre": "Rock",
+    "2026-02-16": {
+        "artiste": "Kanye West",
+        "album": "Vultures 1",
+        "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-09-03": {
+    "2026-02-17": {
+        "artiste": "Prince",
+        "album": "Parade",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-18": {
+        "artiste": "Fela Kuti",
+        "album": "Expensive Shit",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-19": {
+        "artiste": "Kaaris",
+        "album": "Dozo",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-20": {
         "artiste": "Denzel Curry",
-        "album": "King of the Mischievous South Vol. 2",
+        "album": "Imperial",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-09-04": {
-        "artiste": "Travis Scott",
-        "album": "ASTROWORLD",
-        "genre": "Rap US",
+    "2026-02-21": {
+        "artiste": "Booba",
+        "album": "Trône",
+        "genre": "Rap FR",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-09-05": {
+    "2026-02-22": {
+        "artiste": "Damso",
+        "album": "Beyah",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-23": {
         "artiste": "Drake",
-        "album": "Her Loss",
+        "album": "Take Care",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-09-06": {
-        "artiste": "Taylor Swift",
-        "album": "evermore",
+    "2026-02-24": {
+        "artiste": "Kaaris",
+        "album": "ZERO",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-25": {
+        "artiste": "The Weeknd",
+        "album": "Starboy",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-26": {
+        "artiste": "Tame Impala",
+        "album": "Lonerism",
+        "genre": "Psych Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-27": {
+        "artiste": "Ali Farka Touré",
+        "album": "Talking Timbuktu",
+        "genre": "Blues Malien",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-02-28": {
+        "artiste": "Pink Floyd",
+        "album": "Ummagumma",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-01": {
+        "artiste": "Tems",
+        "album": "Born in the Wild",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-02": {
+        "artiste": "Ariana Grande",
+        "album": "Dangerous Woman",
         "genre": "Pop",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-09-07": {
+    "2026-03-03": {
+        "artiste": "Kali Uchis",
+        "album": "Por Vida",
+        "genre": "Latin/Soul",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-04": {
+        "artiste": "Booba",
+        "album": "Ultra",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-05": {
+        "artiste": "Radiohead",
+        "album": "OK Computer",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-06": {
+        "artiste": "Pink Floyd",
+        "album": "Obscured by Clouds",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-07": {
+        "artiste": "Rihanna",
+        "album": "Rated R",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-08": {
+        "artiste": "Kaaris",
+        "album": "Le Bruit de mon âme",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-09": {
+        "artiste": "Burna Boy",
+        "album": "Twice As Tall",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-10": {
+        "artiste": "Frank Ocean",
+        "album": "Blonde",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-11": {
+        "artiste": "Tyler, The Creator",
+        "album": "IGOR",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-12": {
+        "artiste": "The Doors",
+        "album": "The Doors",
+        "genre": "Rock Psyche",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-13": {
+        "artiste": "Pink Floyd",
+        "album": "A Momentary Lapse of Reason",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-14": {
         "artiste": "J. Cole",
         "album": "The Fall Off",
         "genre": "Rap US",
@@ -2249,11 +656,1604 @@
         "note": null,
         "avis": ""
     },
-    "2026-09-08": {
-        "artiste": "Damso",
-        "album": "Vieux Sons",
+    "2026-03-15": {
+        "artiste": "Taylor Swift",
+        "album": "Taylor Swift",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-16": {
+        "artiste": "OutKast",
+        "album": "Stankonia",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-17": {
+        "artiste": "Denzel Curry",
+        "album": "Melt My Eyez See Your Future",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-18": {
+        "artiste": "Pink Floyd",
+        "album": "Meddle",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-19": {
+        "artiste": "J. Cole",
+        "album": "Cole World",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-20": {
+        "artiste": "Rihanna",
+        "album": "Good Girl Gone Bad",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-21": {
+        "artiste": "Aretha Franklin",
+        "album": "I Never Loved a Man the Way I Love You",
+        "genre": "Soul",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-22": {
+        "artiste": "Prince",
+        "album": "Prince",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-23": {
+        "artiste": "Kaaris",
+        "album": "Day One",
         "genre": "Rap FR",
         "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-24": {
+        "artiste": "Jay-Z",
+        "album": "The Blueprint 3",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-25": {
+        "artiste": "Kali Uchis",
+        "album": "Red Moon In Venus",
+        "genre": "Latin/Soul",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-26": {
+        "artiste": "Asake",
+        "album": "Work Of Art",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-27": {
+        "artiste": "Bad Bunny",
+        "album": "X 100PRE",
+        "genre": "Latin/Trap",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-28": {
+        "artiste": "Pink Floyd",
+        "album": "The Piper at the Gates of Dawn",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-29": {
+        "artiste": "Pink Floyd",
+        "album": "Atom Heart Mother",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-30": {
+        "artiste": "Tupac",
+        "album": "All Eyez On Me",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-03-31": {
+        "artiste": "Fela Kuti",
+        "album": "Zombie",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-01": {
+        "artiste": "Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-02": {
+        "artiste": "Kaaris",
+        "album": "Okou Gnakouri",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-03": {
+        "artiste": "J. Cole",
+        "album": "The Off-Season",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-04": {
+        "artiste": "SCH",
+        "album": "Deo Favente",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-05": {
+        "artiste": "Daft Punk",
+        "album": "Tron: Legacy",
+        "genre": "Electro",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-06": {
+        "artiste": "Rihanna",
+        "album": "Loud",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-07": {
+        "artiste": "Fireboy DML",
+        "album": "Laughter, Tears & Goosebumps",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-08": {
+        "artiste": "Kanye West",
+        "album": "Ye",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-09": {
+        "artiste": "Daft Punk",
+        "album": "Alive 2007",
+        "genre": "Electro",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-10": {
+        "artiste": "Damso",
+        "album": "Ipséité",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-11": {
+        "artiste": "A$AP Rocky",
+        "album": "LONG.LIVE.A$AP",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-12": {
+        "artiste": "Rihanna",
+        "album": "Talk That Talk",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-13": {
+        "artiste": "Michael Jackson",
+        "album": "HIStory: Past, Present and Future, Book I",
+        "genre": "Pop/Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-14": {
+        "artiste": "The Weeknd",
+        "album": "Trilogy",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-15": {
+        "artiste": "Rema",
+        "album": "Rave & Roses",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-16": {
+        "artiste": "J. Cole",
+        "album": "KOD",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-17": {
+        "artiste": "Wizkid",
+        "album": "Superstar",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-18": {
+        "artiste": "Clipse",
+        "album": "Let God Sort Em Out",
+        "genre": "Rap US",
+        "tag": "Nouveauté",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-19": {
+        "artiste": "Travis Scott",
+        "album": "ASTROWORLD",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-20": {
+        "artiste": "Booba",
+        "album": "D.U.C",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-21": {
+        "artiste": "Michael Jackson",
+        "album": "Bad",
+        "genre": "Pop/Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-22": {
+        "artiste": "Prince",
+        "album": "Controversy",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-23": {
+        "artiste": "Kali Uchis",
+        "album": "Orquídeas",
+        "genre": "Latin/Soul",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-24": {
+        "artiste": "Clipse",
+        "album": "Hell Hath No Fury",
+        "genre": "Rap US",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-25": {
+        "artiste": "Ariana Grande",
+        "album": "My Everything",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-26": {
+        "artiste": "Freddie Gibbs",
+        "album": "Piñata",
+        "genre": "Rap US",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-27": {
+        "artiste": "Justice",
+        "album": "Cross",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-28": {
+        "artiste": "Burna Boy",
+        "album": "Love, Damini",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-29": {
+        "artiste": "Laylow",
+        "album": "Trinity",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-04-30": {
+        "artiste": "SCH",
+        "album": "Anarchie",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-01": {
+        "artiste": "Rihanna",
+        "album": "Unapologetic",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-02": {
+        "artiste": "Nekfeu",
+        "album": "Cyborg",
+        "genre": "Rap FR",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-03": {
+        "artiste": "Booba",
+        "album": "Mauvais Oeil (Lunatic)",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-04": {
+        "artiste": "Taylor Swift",
+        "album": "Lover",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-05": {
+        "artiste": "Pink Floyd",
+        "album": "The Final Cut",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-06": {
+        "artiste": "Tame Impala",
+        "album": "Innerspeaker",
+        "genre": "Psych Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-07": {
+        "artiste": "Dr. Dre",
+        "album": "2001",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-08": {
+        "artiste": "Beyoncé",
+        "album": "RENAISSANCE",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-09": {
+        "artiste": "Stevie Wonder",
+        "album": "Innervisions",
+        "genre": "Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-10": {
+        "artiste": "The Beatles",
+        "album": "Help!",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-11": {
+        "artiste": "Kanye West",
+        "album": "My Beautiful Dark Twisted Fantasy",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-12": {
+        "artiste": "SCH",
+        "album": "Rooftop",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-13": {
+        "artiste": "Youssou N'Dour",
+        "album": "Immigrés",
+        "genre": "Mbalax",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-14": {
+        "artiste": "SCH",
+        "album": "A7",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-15": {
+        "artiste": "Denzel Curry",
+        "album": "ZUU",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-16": {
+        "artiste": "Travis Scott",
+        "album": "Utopia",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-17": {
+        "artiste": "Beyoncé",
+        "album": "Dangerously in Love",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-18": {
+        "artiste": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-19": {
+        "artiste": "Asake",
+        "album": "Mr. Money With The Vibe",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-20": {
+        "artiste": "Bad Bunny",
+        "album": "Las que no iban a salir",
+        "genre": "Latin/Trap",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-21": {
+        "artiste": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-22": {
+        "artiste": "Billie Eilish",
+        "album": "dont smile at me",
+        "genre": "Pop Alt",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-23": {
+        "artiste": "Prince",
+        "album": "Dirty Mind",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-24": {
+        "artiste": "PNL",
+        "album": "Dans la légende",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-25": {
+        "artiste": "A$AP Rocky",
+        "album": "LIVE.LOVE.A$AP",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-26": {
+        "artiste": "Kaaris",
+        "album": "Or Noir Part II",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-27": {
+        "artiste": "Mac Miller",
+        "album": "The Divine Feminine",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-28": {
+        "artiste": "J. Cole",
+        "album": "4 Your Eyez Only",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-29": {
+        "artiste": "Amy Winehouse",
+        "album": "Back to Black",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-30": {
+        "artiste": "The Beatles",
+        "album": "Abbey Road",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-05-31": {
+        "artiste": "Beyoncé",
+        "album": "Lemonade",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-01": {
+        "artiste": "Marvin Gaye",
+        "album": "What's Going On",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-02": {
+        "artiste": "Jay-Z",
+        "album": "The Blueprint",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-03": {
+        "artiste": "Jay-Z",
+        "album": "Vol. 2... Hard Knock Life",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-04": {
+        "artiste": "Mac Miller",
+        "album": "Faces",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-05": {
+        "artiste": "Ariana Grande",
+        "album": "Yours Truly",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-06": {
+        "artiste": "Orchestra Baobab",
+        "album": "Pirate's Choice",
+        "genre": "Afro-Cubain",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-07": {
+        "artiste": "The Beatles",
+        "album": "Rubber Soul",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-08": {
+        "artiste": "Tyler, The Creator",
+        "album": "Flower Boy",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-09": {
+        "artiste": "Kali Uchis",
+        "album": "Isolation",
+        "genre": "Latin/Soul",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-10": {
+        "artiste": "The Smiths",
+        "album": "The Queen Is Dead",
+        "genre": "Rock Indé",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-11": {
+        "artiste": "Burna Boy",
+        "album": "African Giant",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-12": {
+        "artiste": "The Bee Gees",
+        "album": "Living Eyes",
+        "genre": "Disco/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-13": {
+        "artiste": "Pink Floyd",
+        "album": "The Wall",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-14": {
+        "artiste": "The Bee Gees",
+        "album": "Spirits Having Flown",
+        "genre": "Disco/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-15": {
+        "artiste": "Nekfeu",
+        "album": "Feu",
+        "genre": "Rap FR",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-16": {
+        "artiste": "Alpha Wann",
+        "album": "UMLA",
+        "genre": "Rap FR",
+        "tag": "Technique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-17": {
+        "artiste": "Etta James",
+        "album": "At Last!",
+        "genre": "Soul",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-18": {
+        "artiste": "Drake",
+        "album": "Scorpion",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-19": {
+        "artiste": "Koffi Olomidé",
+        "album": "Loi",
+        "genre": "Ndombolo",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-20": {
+        "artiste": "Ayra Starr",
+        "album": "The Year I Turned 21",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-21": {
+        "artiste": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "genre": "Latin/Trap",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-22": {
+        "artiste": "Bad Bunny",
+        "album": "YHLQMDLG",
+        "genre": "Latin/Trap",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-23": {
+        "artiste": "The Beatles",
+        "album": "Revolver",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-24": {
+        "artiste": "The Weeknd",
+        "album": "My Dear Melancholy,",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-25": {
+        "artiste": "Snoop Dogg",
+        "album": "No Limit Top Dogg",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-26": {
+        "artiste": "Wizkid",
+        "album": "Made in Lagos",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-27": {
+        "artiste": "Booba",
+        "album": "Ouest Side",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-28": {
+        "artiste": "Davido",
+        "album": "A Good Time",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-29": {
+        "artiste": "Lauryn Hill",
+        "album": "The Miseducation of Lauryn Hill",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-06-30": {
+        "artiste": "Frank Ocean",
+        "album": "Endless",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-01": {
+        "artiste": "Kanye West",
+        "album": "Graduation",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-02": {
+        "artiste": "Stevie Wonder",
+        "album": "Talking Book",
+        "genre": "Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-03": {
+        "artiste": "Rema",
+        "album": "HEIS",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-04": {
+        "artiste": "Ariana Grande",
+        "album": "thank u, next",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-05": {
+        "artiste": "Kanye West",
+        "album": "The Life of Pablo",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-06": {
+        "artiste": "Stevie Wonder",
+        "album": "Fulfillingness' First Finale",
+        "genre": "Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-07": {
+        "artiste": "Alpha Wann",
+        "album": "Alph Lauren",
+        "genre": "Rap FR",
+        "tag": "Technique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-08": {
+        "artiste": "Prince",
+        "album": "For You",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-09": {
+        "artiste": "Taylor Swift",
+        "album": "The Tortured Poets Department",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-10": {
+        "artiste": "Miles Davis",
+        "album": "Kind of Blue",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-11": {
+        "artiste": "Michael Jackson",
+        "album": "Invincible",
+        "genre": "Pop/Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-12": {
+        "artiste": "The Beatles",
+        "album": "A Hard Day's Night",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-13": {
+        "artiste": "Taylor Swift",
+        "album": "1989 (Taylor's Version)",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-14": {
+        "artiste": "Nekfeu",
+        "album": "Les Étoiles Vagabondes",
+        "genre": "Rap FR",
+        "tag": "Classique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-15": {
+        "artiste": "Snoop Dogg",
+        "album": "Bush",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-16": {
+        "artiste": "Booba",
+        "album": "0.9",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-17": {
+        "artiste": "The Beatles",
+        "album": "Let It Be",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-18": {
+        "artiste": "Kali Uchis",
+        "album": "Sin Miedo",
+        "genre": "Latin/Soul",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-19": {
+        "artiste": "Bad Bunny",
+        "album": "Nadie Sabe Lo Que Va a Pasar Mañana",
+        "genre": "Latin/Trap",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-20": {
+        "artiste": "Tems",
+        "album": "If Orange Was A Place",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-21": {
+        "artiste": "Tame Impala",
+        "album": "The Slow Rush",
+        "genre": "Psych Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-22": {
+        "artiste": "Michael Jackson",
+        "album": "Off the Wall",
+        "genre": "Pop/Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-23": {
+        "artiste": "Kendrick Lamar",
+        "album": "DAMN.",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-24": {
+        "artiste": "Travis Scott",
+        "album": "Rodeo",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-25": {
+        "artiste": "Cesária Évora",
+        "album": "Miss Perfumado",
+        "genre": "Morna",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-26": {
+        "artiste": "Omah Lay",
+        "album": "Boy Alone",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-27": {
+        "artiste": "Kaaris",
+        "album": "Or Noir",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-28": {
+        "artiste": "Fally Ipupa",
+        "album": "Tokooos",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-29": {
+        "artiste": "Kendrick Lamar",
+        "album": "good kid, m.A.A.d city",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-30": {
+        "artiste": "Alpha Wann",
+        "album": "don dada mixtape vol 1",
+        "genre": "Rap FR",
+        "tag": "Technique",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-07-31": {
+        "artiste": "Booba",
+        "album": "Panthéon",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-01": {
+        "artiste": "Kanye West",
+        "album": "Vultures 2",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-02": {
+        "artiste": "Fleetwood Mac",
+        "album": "Rumours",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-03": {
+        "artiste": "Snoop Dogg",
+        "album": "Paid tha Cost to Be da Boss",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-04": {
+        "artiste": "Kendrick Lamar",
+        "album": "Mr. Morale & The Big Steppers",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-05": {
+        "artiste": "Denzel Curry",
+        "album": "TA13OO",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-06": {
+        "artiste": "Beyoncé",
+        "album": "B'Day",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-07": {
+        "artiste": "Prince",
+        "album": "Diamonds and Pearls",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-08": {
+        "artiste": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-09": {
+        "artiste": "Kendrick Lamar",
+        "album": "GNX",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-10": {
+        "artiste": "Jay-Z",
+        "album": "American Gangster",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-11": {
+        "artiste": "PNL",
+        "album": "Le Monde Chico",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-12": {
+        "artiste": "Jay-Z",
+        "album": "In My Lifetime, Vol. 1",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-13": {
+        "artiste": "Pink Floyd",
+        "album": "A Saucerful of Secrets",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-14": {
+        "artiste": "Beyoncé",
+        "album": "COWBOY CARTER",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-15": {
+        "artiste": "Joy Division",
+        "album": "Unknown Pleasures",
+        "genre": "Post-Punk",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-16": {
+        "artiste": "Kendrick Lamar",
+        "album": "To Pimp A Butterfly",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-17": {
+        "artiste": "Kaaris",
+        "album": "Double Fuck",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-18": {
+        "artiste": "JID",
+        "album": "The Never Story",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-19": {
+        "artiste": "The Weeknd",
+        "album": "After Hours",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-20": {
+        "artiste": "Taylor Swift",
+        "album": "evermore",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-21": {
+        "artiste": "Snoop Dogg",
+        "album": "Missionary",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-22": {
+        "artiste": "Prince",
+        "album": "Purple Rain",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-23": {
+        "artiste": "Daft Punk",
+        "album": "Discovery",
+        "genre": "Electro",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-24": {
+        "artiste": "Tracy Chapman",
+        "album": "Tracy Chapman",
+        "genre": "Folk",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-25": {
+        "artiste": "Jay-Z",
+        "album": "Vol. 3... Life and Times of S. Carter",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-26": {
+        "artiste": "Portishead",
+        "album": "Dummy",
+        "genre": "Trip-Hop",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-27": {
+        "artiste": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-28": {
+        "artiste": "Burna Boy",
+        "album": "On a Spaceship",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-29": {
+        "artiste": "Frank Ocean",
+        "album": "Channel Orange",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-30": {
+        "artiste": "Sade",
+        "album": "Diamond Life",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-08-31": {
+        "artiste": "Snoop Dogg",
+        "album": "Tha Doggfather",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-01": {
+        "artiste": "SZA",
+        "album": "SOS",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-02": {
+        "artiste": "Playboi Carti",
+        "album": "I AM MUSIC",
+        "genre": "Rap US",
+        "tag": "Rage/Trap",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-03": {
+        "artiste": "Jimi Hendrix",
+        "album": "Are You Experienced",
+        "genre": "Rock Psyche",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-04": {
+        "artiste": "Kendrick Lamar",
+        "album": "Section.80",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-05": {
+        "artiste": "Prince",
+        "album": "Around the World in a Day",
+        "genre": "Pop/Funk",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-06": {
+        "artiste": "Tyler, The Creator",
+        "album": "Cherry Bomb",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-07": {
+        "artiste": "The Beatles",
+        "album": "Please Please Me",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-08": {
+        "artiste": "Stevie Wonder",
+        "album": "Music of My Mind",
+        "genre": "Soul",
+        "tag": "Légende",
         "ecoute": false,
         "note": null,
         "avis": ""
@@ -2268,294 +2268,69 @@
         "avis": ""
     },
     "2026-09-10": {
-        "artiste": "Stevie Wonder",
-        "album": "Fulfillingness' First Finale",
-        "genre": "Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-11": {
-        "artiste": "J. Cole",
-        "album": "Born Sinner",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-12": {
-        "artiste": "Rihanna",
-        "album": "Rated R",
-        "genre": "Pop/R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-13": {
-        "artiste": "The Bee Gees",
-        "album": "One",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-14": {
-        "artiste": "Damso",
-        "album": "Lithopédion",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-15": {
-        "artiste": "Kendrick Lamar",
-        "album": "Mr. Morale & The Big Steppers",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-16": {
-        "artiste": "The Beatles",
-        "album": "Beatles for Sale",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-17": {
-        "artiste": "Tyler, The Creator",
-        "album": "IGOR",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-18": {
-        "artiste": "Laylow",
-        "album": "L'Étrange Histoire de Mr. Anderson",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-19": {
-        "artiste": "Ariana Grande",
-        "album": "Dangerous Woman",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-20": {
-        "artiste": "Taylor Swift",
-        "album": "reputation",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-21": {
-        "artiste": "Kaaris",
-        "album": "Le Bruit de mon âme",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-22": {
-        "artiste": "Kanye West",
-        "album": "Late Registration",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-23": {
-        "artiste": "Bad Bunny",
-        "album": "X 100PRE",
-        "genre": "Latin/Trap",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-24": {
-        "artiste": "Daft Punk",
-        "album": "Alive 1997",
-        "genre": "Electro",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-25": {
-        "artiste": "Prince",
-        "album": "Around the World in a Day",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-26": {
-        "artiste": "Dr. Dre",
-        "album": "2001",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-27": {
-        "artiste": "Ariana Grande",
-        "album": "eternal sunshine",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-28": {
-        "artiste": "Booba",
-        "album": "Nero Nemesis",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-29": {
         "artiste": "Freddie Gibbs",
-        "album": "Alfredo",
-        "genre": "Rap US",
-        "tag": "Chef d'oeuvre",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-09-30": {
-        "artiste": "Kanye West",
-        "album": "808s & Heartbreak",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-01": {
-        "artiste": "Hamza",
-        "album": "Sincèrement",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-02": {
-        "artiste": "Clipse",
-        "album": "Let God Sort Em Out",
+        "album": "Alfredo 2",
         "genre": "Rap US",
         "tag": "Nouveauté",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-03": {
-        "artiste": "Tyler, The Creator",
-        "album": "Chromakopia",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-04": {
-        "artiste": "OutKast",
-        "album": "Stankonia",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-05": {
-        "artiste": "The Smiths",
-        "album": "The Queen Is Dead",
-        "genre": "Rock Indé",
+    "2026-09-11": {
+        "artiste": "Massive Attack",
+        "album": "Mezzanine",
+        "genre": "Trip-Hop",
         "tag": "Culture Générale",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-06": {
-        "artiste": "Kanye West",
-        "album": "Ye",
+    "2026-09-12": {
+        "artiste": "J. Cole",
+        "album": "2014 Forest Hills Drive",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-07": {
-        "artiste": "Kaaris",
-        "album": "ZERO",
+    "2026-09-13": {
+        "artiste": "Hamza",
+        "album": "1994",
         "genre": "Rap FR",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-08": {
-        "artiste": "Lauryn Hill",
-        "album": "The Miseducation of Lauryn Hill",
-        "genre": "Classique",
-        "tag": "Culture",
+    "2026-09-14": {
+        "artiste": "Franco & TPOK Jazz",
+        "album": "Mario",
+        "genre": "Rumba Congolaise",
+        "tag": "Légende Afro",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-09": {
-        "artiste": "Tupac",
-        "album": "All Eyez On Me",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-10": {
-        "artiste": "The Weeknd",
-        "album": "Dawn FM",
-        "genre": "Pop/R&B",
+    "2026-09-15": {
+        "artiste": "The Bee Gees",
+        "album": "Main Course",
+        "genre": "Disco/Pop",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-11": {
-        "artiste": "Alpha Wann",
-        "album": "UMLA",
-        "genre": "Rap FR",
-        "tag": "Technique",
+    "2026-09-16": {
+        "artiste": "Mobb Deep",
+        "album": "The Infamous",
+        "genre": "Rap US",
+        "tag": "Culture Générale",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-12": {
+    "2026-09-17": {
         "artiste": "Pink Floyd",
         "album": "The Division Bell",
         "genre": "Rock Prog",
@@ -2564,37 +2339,262 @@
         "note": null,
         "avis": ""
     },
-    "2026-10-13": {
-        "artiste": "Prince",
-        "album": "Musicology",
-        "genre": "Pop/Funk",
+    "2026-09-18": {
+        "artiste": "Tyler, The Creator",
+        "album": "Call Me If You Get Lost",
+        "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-10-14": {
-        "artiste": "Bob Marley",
-        "album": "Exodus",
+    "2026-09-19": {
+        "artiste": "Tyla",
+        "album": "TYLA",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-20": {
+        "artiste": "SCH",
+        "album": "JVLIVS",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-21": {
+        "artiste": "Gorillaz",
+        "album": "Demon Days",
         "genre": "Classique",
         "tag": "Culture",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
+    "2026-09-22": {
+        "artiste": "A$AP Rocky",
+        "album": "Testing",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-23": {
+        "artiste": "Drake",
+        "album": "Thank Me Later",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-24": {
+        "artiste": "Pink Floyd",
+        "album": "More",
+        "genre": "Rock Prog",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-25": {
+        "artiste": "Snoop Dogg",
+        "album": "Tha Blue Carpet Treatment",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-26": {
+        "artiste": "Taylor Swift",
+        "album": "reputation",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-27": {
+        "artiste": "Burna Boy",
+        "album": "I Told Them...",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-28": {
+        "artiste": "Rihanna",
+        "album": "ANTI",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-29": {
+        "artiste": "Damso",
+        "album": "Vieux Sons",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-09-30": {
+        "artiste": "Fela Kuti",
+        "album": "Roforofo Fight",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-01": {
+        "artiste": "Playboi Carti",
+        "album": "Die Lit",
+        "genre": "Rap US",
+        "tag": "Rage/Trap",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-02": {
+        "artiste": "Tyler, The Creator",
+        "album": "Goblin",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-03": {
+        "artiste": "Billie Eilish",
+        "album": "HIT ME HARD AND SOFT",
+        "genre": "Pop Alt",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-04": {
+        "artiste": "The Beatles",
+        "album": "The Beatles (White Album)",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-05": {
+        "artiste": "Mac Miller",
+        "album": "GO:OD AM",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-06": {
+        "artiste": "Freddie Gibbs",
+        "album": "Alfredo",
+        "genre": "Rap US",
+        "tag": "Chef d'oeuvre",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-07": {
+        "artiste": "Kanye West",
+        "album": "808s & Heartbreak",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-08": {
+        "artiste": "Uncle Waffles",
+        "album": "Red Dragon",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-09": {
+        "artiste": "Led Zeppelin",
+        "album": "Led Zeppelin IV",
+        "genre": "Hard Rock",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-10": {
+        "artiste": "A$AP Rocky",
+        "album": "Don't Be Dumb",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-11": {
+        "artiste": "La Fève",
+        "album": "24",
+        "genre": "Rap FR",
+        "tag": "New Wave",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-12": {
+        "artiste": "The Bee Gees",
+        "album": "E.S.P.",
+        "genre": "Disco/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-13": {
+        "artiste": "Damso",
+        "album": "J'ai Menti",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-14": {
+        "artiste": "La Fève",
+        "album": "ERRR",
+        "genre": "Rap FR",
+        "tag": "New Wave",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
     "2026-10-15": {
-        "artiste": "Stevie Wonder",
-        "album": "Talking Book",
-        "genre": "Soul",
-        "tag": "Légende",
+        "artiste": "Burna Boy",
+        "album": "Outside",
+        "genre": "Afro-Fusion",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-10-16": {
-        "artiste": "Pink Floyd",
-        "album": "A Saucerful of Secrets",
-        "genre": "Rock Prog",
+        "artiste": "Booba",
+        "album": "Temps mort",
+        "genre": "Rap FR",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
@@ -2610,321 +2610,51 @@
         "avis": ""
     },
     "2026-10-18": {
-        "artiste": "Tracy Chapman",
-        "album": "Tracy Chapman",
-        "genre": "Folk",
-        "tag": "Culture Générale",
+        "artiste": "SCH",
+        "album": "JVLIVS II",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-10-19": {
-        "artiste": "Pink Floyd",
-        "album": "Ummagumma",
-        "genre": "Rock Prog",
+        "artiste": "Snoop Dogg",
+        "album": "Tha Last Meal",
+        "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-10-20": {
-        "artiste": "Angelique Kidjo",
-        "album": "Djin Djin",
-        "genre": "Benin/World",
-        "tag": "Légende Afro",
+        "artiste": "Drake",
+        "album": "If You're Reading This It's Too Late",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-10-21": {
-        "artiste": "Playboi Carti",
-        "album": "Playboi Carti",
-        "genre": "Rap US",
-        "tag": "Rage/Trap",
+        "artiste": "The Weeknd",
+        "album": "Beauty Behind the Madness",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-10-22": {
-        "artiste": "Sade",
-        "album": "Diamond Life",
-        "genre": "Classique",
-        "tag": "Culture",
+        "artiste": "Billie Eilish",
+        "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+        "genre": "Pop Alt",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-10-23": {
-        "artiste": "The Bee Gees",
-        "album": "Living Eyes",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-24": {
-        "artiste": "Beyoncé",
-        "album": "Lemonade",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-25": {
-        "artiste": "J. Cole",
-        "album": "The Off-Season",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-26": {
-        "artiste": "Prince",
-        "album": "Purple Rain",
-        "genre": "Pop/Funk",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-27": {
-        "artiste": "Salif Keita",
-        "album": "Soro",
-        "genre": "Mandingue",
-        "tag": "Légende Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-28": {
-        "artiste": "Snoop Dogg",
-        "album": "Tha Doggfather",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-29": {
-        "artiste": "SZA",
-        "album": "Z (EP)",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-30": {
-        "artiste": "Stevie Wonder",
-        "album": "Innervisions",
-        "genre": "Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-10-31": {
-        "artiste": "Notorious B.I.G.",
-        "album": "Ready to Die",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-01": {
-        "artiste": "SCH",
-        "album": "JVLIVS",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-02": {
-        "artiste": "Mac Miller",
-        "album": "GO:OD AM",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-03": {
-        "artiste": "Mobb Deep",
-        "album": "The Infamous",
-        "genre": "Rap US",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-04": {
-        "artiste": "Alpha Wann",
-        "album": "Alph Lauren 3",
-        "genre": "Rap FR",
-        "tag": "Technique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-05": {
-        "artiste": "Daft Punk",
-        "album": "Discovery",
-        "genre": "Electro",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-06": {
-        "artiste": "Jay-Z",
-        "album": "Reasonable Doubt",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-07": {
-        "artiste": "The Bee Gees",
-        "album": "Children of the World",
-        "genre": "Disco/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-08": {
-        "artiste": "Kanye West",
-        "album": "Yeezus",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-09": {
-        "artiste": "Taylor Swift",
-        "album": "The Tortured Poets Department",
-        "genre": "Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-10": {
-        "artiste": "The Beatles",
-        "album": "The Beatles (White Album)",
-        "genre": "Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-11": {
-        "artiste": "Davido",
-        "album": "Timeless",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-12": {
-        "artiste": "Tame Impala",
-        "album": "Currents",
-        "genre": "Psych Rock",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-13": {
-        "artiste": "Booba",
-        "album": "Temps mort",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-14": {
-        "artiste": "Snoop Dogg",
-        "album": "Paid tha Cost to Be da Boss",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-15": {
-        "artiste": "Kaaris",
-        "album": "Day One",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-16": {
-        "artiste": "SZA",
-        "album": "SOS",
-        "genre": "R&B",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-17": {
-        "artiste": "Booba",
-        "album": "D.U.C",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-18": {
-        "artiste": "Daft Punk",
-        "album": "Human After All",
-        "genre": "Electro",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-19": {
-        "artiste": "Nas",
-        "album": "Illmatic",
-        "genre": "Classique",
-        "tag": "Culture",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-20": {
-        "artiste": "Michael Jackson",
-        "album": "Xscape",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-21": {
-        "artiste": "Bad Bunny",
-        "album": "El Último Tour Del Mundo",
-        "genre": "Latin/Trap",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-22": {
         "artiste": "Damso",
         "album": "Batterie Faible",
         "genre": "Rap FR",
@@ -2933,79 +2663,97 @@
         "note": null,
         "avis": ""
     },
-    "2026-11-23": {
-        "artiste": "Tyler, The Creator",
-        "album": "Cherry Bomb",
+    "2026-10-24": {
+        "artiste": "Drake",
+        "album": "More Life",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-11-24": {
-        "artiste": "Daft Punk",
-        "album": "Alive 2007",
-        "genre": "Electro",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-25": {
-        "artiste": "Jay-Z",
-        "album": "The Blueprint",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-26": {
-        "artiste": "Beyoncé",
-        "album": "BEYONCÉ",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-27": {
-        "artiste": "Playboi Carti",
-        "album": "Whole Lotta Red",
-        "genre": "Rap US",
-        "tag": "Rage/Trap",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-28": {
-        "artiste": "Freddie Gibbs",
-        "album": "Piñata",
-        "genre": "Rap US",
-        "tag": "Classique",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-29": {
-        "artiste": "Bad Bunny",
-        "album": "Las que no iban a salir",
-        "genre": "Latin/Trap",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-11-30": {
-        "artiste": "Nirvana",
-        "album": "Nevermind",
+    "2026-10-25": {
+        "artiste": "Bob Marley",
+        "album": "Exodus",
         "genre": "Classique",
         "tag": "Culture",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-12-01": {
+    "2026-10-26": {
+        "artiste": "Wu-Tang Clan",
+        "album": "Enter the Wu-Tang",
+        "genre": "Classique",
+        "tag": "Culture",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-27": {
+        "artiste": "Kanye West",
+        "album": "The College Dropout",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-28": {
+        "artiste": "JID",
+        "album": "God Does Like Ugly",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-29": {
+        "artiste": "Booba",
+        "album": "Futur",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-30": {
+        "artiste": "D'angelo",
+        "album": "Voodoo",
+        "genre": "Neo-Soul",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-10-31": {
+        "artiste": "Taylor Swift",
+        "album": "Speak Now (Taylor's Version)",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-01": {
+        "artiste": "JID",
+        "album": "DiCaprio 2",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-02": {
+        "artiste": "Mac Miller",
+        "album": "Watching Movies with the Sound Off",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-03": {
         "artiste": "Daft Punk",
         "album": "Random Access Memories",
         "genre": "Electro",
@@ -3014,9 +2762,261 @@
         "note": null,
         "avis": ""
     },
-    "2026-12-02": {
+    "2026-11-04": {
+        "artiste": "Ayra Starr",
+        "album": "19 & Dangerous",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-05": {
         "artiste": "J. Cole",
-        "album": "Cole World",
+        "album": "Born Sinner",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-06": {
+        "artiste": "Kaaris",
+        "album": "2.7.0",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-07": {
+        "artiste": "The Bee Gees",
+        "album": "Saturday Night Fever",
+        "genre": "Disco/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-08": {
+        "artiste": "Denzel Curry",
+        "album": "King of the Mischievous South Vol. 2",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-09": {
+        "artiste": "Stevie Wonder",
+        "album": "Songs in the Key of Life",
+        "genre": "Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-10": {
+        "artiste": "David Bowie",
+        "album": "The Rise and Fall of Ziggy Stardust",
+        "genre": "Glam Rock",
+        "tag": "Culture Générale",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-11": {
+        "artiste": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-12": {
+        "artiste": "Hamza",
+        "album": "Paradise",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-13": {
+        "artiste": "Playboi Carti",
+        "album": "Playboi Carti",
+        "genre": "Rap US",
+        "tag": "Rage/Trap",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-14": {
+        "artiste": "Stevie Wonder",
+        "album": "Hotter than July",
+        "genre": "Soul",
+        "tag": "Légende",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-15": {
+        "artiste": "La Fève",
+        "album": "KOLAF",
+        "genre": "Rap FR",
+        "tag": "New Wave",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-16": {
+        "artiste": "Davido",
+        "album": "Timeless",
+        "genre": "Afro/World",
+        "tag": "Vibe Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-17": {
+        "artiste": "PNL",
+        "album": "Deux frères",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-18": {
+        "artiste": "Angelique Kidjo",
+        "album": "Djin Djin",
+        "genre": "Benin/World",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-19": {
+        "artiste": "Hamza",
+        "album": "Sincèrement",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-20": {
+        "artiste": "SCH",
+        "album": "Julius Prequel",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-21": {
+        "artiste": "Snoop Dogg",
+        "album": "R&G",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-22": {
+        "artiste": "Kali Uchis",
+        "album": "Sincerely",
+        "genre": "Latin/Soul",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-23": {
+        "artiste": "Beyoncé",
+        "album": "4",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-24": {
+        "artiste": "Salif Keita",
+        "album": "Soro",
+        "genre": "Mandingue",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-25": {
+        "artiste": "The Beatles",
+        "album": "Yellow Submarine",
+        "genre": "Rock",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-26": {
+        "artiste": "Miriam Makeba",
+        "album": "Pata Pata",
+        "genre": "Jazz/Folk",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-27": {
+        "artiste": "Snoop Dogg",
+        "album": "BODR",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-28": {
+        "artiste": "Kanye West",
+        "album": "Donda",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-29": {
+        "artiste": "Drake",
+        "album": "Her Loss",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-11-30": {
+        "artiste": "Frank Ocean",
+        "album": "nostalgia, ultra",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-01": {
+        "artiste": "Ariana Grande",
+        "album": "eternal sunshine",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-02": {
+        "artiste": "Drake",
+        "album": "For All The Dogs",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
@@ -3024,98 +3024,98 @@
         "avis": ""
     },
     "2026-12-03": {
-        "artiste": "Daft Punk",
-        "album": "Tron: Legacy",
-        "genre": "Electro",
-        "tag": "INTEGRALE",
+        "artiste": "Michael Jackson",
+        "album": "Thriller",
+        "genre": "Pop/Soul",
+        "tag": "Légende",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-04": {
-        "artiste": "Massive Attack",
-        "album": "Mezzanine",
-        "genre": "Trip-Hop",
-        "tag": "Culture Générale",
+        "artiste": "Alpha Wann",
+        "album": "Alph Lauren 3",
+        "genre": "Rap FR",
+        "tag": "Technique",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-05": {
-        "artiste": "Kendrick Lamar",
-        "album": "GNX",
-        "genre": "Rap US",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-06": {
-        "artiste": "Beyoncé",
-        "album": "COWBOY CARTER",
-        "genre": "R&B/Pop",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-07": {
-        "artiste": "De La Soul",
-        "album": "3 Feet High and Rising",
-        "genre": "Rap US",
-        "tag": "Culture Générale",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-08": {
-        "artiste": "Kaaris",
-        "album": "Double Fuck",
+        "artiste": "SCH",
+        "album": "autobahn",
         "genre": "Rap FR",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
+    "2026-12-06": {
+        "artiste": "Damso",
+        "album": "Lithopédion",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-07": {
+        "artiste": "Kaaris",
+        "album": "SVR",
+        "genre": "Rap FR",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-08": {
+        "artiste": "Beyoncé",
+        "album": "I Am... Sasha Fierce",
+        "genre": "R&B/Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
     "2026-12-09": {
-        "artiste": "JID",
-        "album": "The Forever Story",
-        "genre": "Rap US",
+        "artiste": "Pink Floyd",
+        "album": "The Endless River",
+        "genre": "Rock Prog",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-10": {
-        "artiste": "JID",
-        "album": "The Never Story",
-        "genre": "Rap US",
+        "artiste": "The Beatles",
+        "album": "With the Beatles",
+        "genre": "Rock",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-11": {
-        "artiste": "Led Zeppelin",
-        "album": "Led Zeppelin IV",
-        "genre": "Hard Rock",
-        "tag": "Culture Générale",
+        "artiste": "SZA",
+        "album": "Lana",
+        "genre": "R&B",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-12": {
-        "artiste": "Wizkid",
-        "album": "Made in Lagos",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
+        "artiste": "Daft Punk",
+        "album": "Homework",
+        "genre": "Electro",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-13": {
-        "artiste": "Kanye West",
-        "album": "The Life of Pablo",
+        "artiste": "Tyler, The Creator",
+        "album": "Bastard",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
@@ -3123,9 +3123,9 @@
         "avis": ""
     },
     "2026-12-14": {
-        "artiste": "Kanye West",
-        "album": "Vultures 1",
-        "genre": "Rap US",
+        "artiste": "Taylor Swift",
+        "album": "Fearless (Taylor's Version)",
+        "genre": "Pop",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
@@ -3141,33 +3141,24 @@
         "avis": ""
     },
     "2026-12-16": {
-        "artiste": "Jay-Z",
-        "album": "The Black Album",
-        "genre": "Rap US",
+        "artiste": "SCH",
+        "album": "JVLIVS III",
+        "genre": "Rap FR",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-17": {
-        "artiste": "Asake",
-        "album": "Work Of Art",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-18": {
         "artiste": "Daft Punk",
-        "album": "Homework",
+        "album": "Human After All",
         "genre": "Electro",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-12-19": {
+    "2026-12-18": {
         "artiste": "Mac Miller",
         "album": "Blue Slide Park",
         "genre": "Rap US",
@@ -3176,110 +3167,119 @@
         "note": null,
         "avis": ""
     },
-    "2026-12-20": {
-        "artiste": "Omah Lay",
-        "album": "Boy Alone",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-21": {
-        "artiste": "PNL",
-        "album": "Le Monde Chico",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-22": {
-        "artiste": "Booba",
-        "album": "Ouest Side",
-        "genre": "Rap FR",
-        "tag": "INTEGRALE",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-23": {
-        "artiste": "Frank Ocean",
-        "album": "Channel Orange",
+    "2026-12-19": {
+        "artiste": "SZA",
+        "album": "Ctrl",
         "genre": "R&B",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-12-24": {
-        "artiste": "Jay-Z",
-        "album": "Vol. 2... Hard Knock Life",
+    "2026-12-20": {
+        "artiste": "Snoop Dogg",
+        "album": "Da Game Is to Be Sold...",
         "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-12-25": {
+    "2026-12-21": {
+        "artiste": "Snoop Dogg",
+        "album": "Doggystyle",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-22": {
         "artiste": "Playboi Carti",
-        "album": "Die Lit",
+        "album": "Whole Lotta Red",
         "genre": "Rap US",
         "tag": "Rage/Trap",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
-    "2026-12-26": {
-        "artiste": "Tems",
-        "album": "If Orange Was A Place",
-        "genre": "Afro/World",
-        "tag": "Vibe Afro",
-        "ecoute": false,
-        "note": null,
-        "avis": ""
-    },
-    "2026-12-27": {
-        "artiste": "SCH",
-        "album": "Anarchie",
-        "genre": "Rap FR",
+    "2026-12-23": {
+        "artiste": "Jay-Z",
+        "album": "4:44",
+        "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
+    "2026-12-24": {
+        "artiste": "Taylor Swift",
+        "album": "Red (Taylor's Version)",
+        "genre": "Pop",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-25": {
+        "artiste": "The Weeknd",
+        "album": "Kiss Land",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-26": {
+        "artiste": "Drake",
+        "album": "Views",
+        "genre": "Rap US",
+        "tag": "INTEGRALE",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
+    "2026-12-27": {
+        "artiste": "Manu Dibango",
+        "album": "Soul Makossa",
+        "genre": "Makossa",
+        "tag": "Légende Afro",
+        "ecoute": false,
+        "note": null,
+        "avis": ""
+    },
     "2026-12-28": {
-        "artiste": "Booba",
-        "album": "Lunatic",
-        "genre": "Rap FR",
+        "artiste": "Kanye West",
+        "album": "Late Registration",
+        "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-29": {
-        "artiste": "Taylor Swift",
-        "album": "Midnights",
-        "genre": "Pop",
+        "artiste": "Tame Impala",
+        "album": "Currents",
+        "genre": "Psych Rock",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-30": {
-        "artiste": "Ariana Grande",
-        "album": "thank u, next",
-        "genre": "Pop",
+        "artiste": "Tyler, The Creator",
+        "album": "Chromakopia",
+        "genre": "Rap US",
         "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
     },
     "2026-12-31": {
-        "artiste": "Michael Jackson",
-        "album": "Invincible",
-        "genre": "Pop/Soul",
-        "tag": "Légende",
+        "artiste": "The Weeknd",
+        "album": "Dawn FM",
+        "genre": "Pop/R&B",
+        "tag": "INTEGRALE",
         "ecoute": false,
         "note": null,
         "avis": ""
