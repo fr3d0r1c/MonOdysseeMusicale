@@ -249,116 +249,224 @@ if not df.empty:
 
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🎧 À l'écoute", "📊 Stats & Rattrapage", "📅 Calendrier", "🏆 Découvertes", "🔄 Classiques", "🎁 Wrapped"])
 
+    # --- 🎯 DÉFINITION DE L'ALBUM DU JOUR ---
+    df_today = df[df['date'] == today_iso]
+
+    if not df_today.empty:
+        # On prend l'album d'aujourd'hui
+        real_idx = df_today.index[0]
+        current = df.loc[real_idx]
+    else:
+        # Si rien aujourd'hui, on prend le premier album en retard
+        df_todo = df[(df['date'] < today_iso) & (df['ecoute'] == False)]
+        if not df_todo.empty:
+            real_idx = df_todo.index[0]
+            current = df.loc[real_idx]
+        else:
+            current = None
+            real_idx = None
+
     # --- TAB 1 : LE PLAYER ---
     with tab1:
-        df_todo = df[df['ecoute'] == False].sort_values('date')
-        if not df_todo.empty:
-            current = df_todo.iloc[0]
-            real_idx = df[df['date'] == current['date']].index[0]
-            
-            if current['date'] < today_iso:
-                st.markdown(f"<div style='text-align:center; margin-bottom:10px;'><span class='badge-alert'>⚠️ Album prévu pour le {current['date']}</span></div>", unsafe_allow_html=True)
-            
-            st.markdown(f"## {current['pays']} {current['artiste']}")
-            st.markdown(f"#### *{current['album']}* ({current['annee']})")
-            
-            # 🟢 Utilisation de la base de données au lieu de l'API
-            st.image(current['cover_url'], width=320)
-            
-            with st.expander("📖 Histoire & Anecdotes"):
-                try:
-                    wikipedia.set_lang("fr")
-                    res_wiki = wikipedia.search(f"{current['album']} {current['artiste']}")
-                    if res_wiki:
-                        page = wikipedia.page(res_wiki[0])
-                        st.write(page.summary[:700] + "...")
-                        st.markdown(f"[Lire l'article complet]({page.url})")
-                except: st.write("Wikipédia indisponible.")
+        # --- 🎨 STYLE CSS POUR LE GLOW DE LA POCHETTE ---
+        st.markdown("""
+            <style>
+                .cover-glow {
+                    box-shadow: 0 0 25px rgba(255, 130, 0, 0.3);
+                    border-radius: 15px;
+                    transition: transform 0.3s ease;
+                }
+                .cover-glow:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0 0 35px rgba(255, 130, 0, 0.5);
+                }
+            </style>
+        """, unsafe_allow_html=True)
 
-            st.divider()
-            with st.container(border=True):
-                # --- 👑 LOGIQUE DU GOAT UNIQUE PAR MOIS ---
-                mois_actuel = pd.to_datetime(current['date']).month
-                annee_actuelle = pd.to_datetime(current['date']).year
-
-                # Chercher si un GOAT existe déjà ce mois-ci
-                mask_goat = (df['ecoute'] == True) & (df['note'] == 6) & (pd.to_datetime(df['date']).dt.month == mois_actuel) & (pd.to_datetime(df['date']).dt.year == annee_actuelle)
-                df_goat = df[mask_goat]
-
-                goat_deja_pris = not df_goat.empty
-                note_max = 5 if goat_deja_pris else 6
-
-                if goat_deja_pris:
-                    roi = df_goat.iloc[0]
-                    st.warning(f"🔒 **GOAT DU MOIS DÉJÀ ATTRIBUÉ !**\n\nLa couronne appartient actuellement à **{roi['artiste']}** (*{roi['album']}*). Tu dois le rétrograder (via l'Édition Rapide à gauche) si tu veux donner le trône à un autre !")
-                # ------------------------------------------
-
-                with st.form("main_notation_form"):
-                    st.write("### 🎙️ Ton verdict")
-                    c_note, c_pays = st.columns([3, 1])
-                    with c_note:
-                        val_note = st.slider("⭐ Note (6 = GOAT 🐐)", 1, note_max, 4)
-                    with c_pays:
-                        val_pays = st.text_input("Pays", value=current['pays'])
-                    val_avis = st.text_area("Ta critique", height=100)
-                    val_connu = st.checkbox("Je connaissais déjà cet album")
-
-                    if st.form_submit_button("✅ Valider l'écoute"):
-                        df.at[real_idx, 'ecoute'], df.at[real_idx, 'note'], df.at[real_idx, 'avis'], df.at[real_idx, 'deja_connu'], df.at[real_idx, 'pays'] = True, val_note, val_avis, val_connu, val_pays
-                        save_data(df)
-                        st.balloons()
-                        time.sleep(1.5)
-                        st.rerun()
-            
-            if len(df_todo) > 1:
-                next_up = df_todo.iloc[1]
-                st.markdown(f"""
-                <div class='next-album-card'>
-                    <p style='color:#FF8200; margin:0; font-weight:bold; letter-spacing: 2px; font-size: 0.8em;'>🔜 SUIVANT</p>
-                    <img src='{next_up['cover_url']}' class='next-album-cover'>
-                    <h3 style='margin:5px 0; font-size: 1.2em;'>{next_up['pays']} {next_up['artiste']}</h3>
-                    <p style='color:#aaa; font-style:italic; margin:0;'>{next_up['album']}</p>
-                </div>
-                """, unsafe_allow_html=True)
+        if current is None or current.empty:
+            st.success("🎉 Odyssée à jour ! Pose ton casque, tu as tout écouté.")
         else:
-            st.success("🏆 INCROYABLE ! Tu as terminé le challenge !")
-            st.balloons()
+            # --- 🌟 HEADER DYNAMIQUE ---
+            st.markdown(f"<h2 style='text-align:center; color:#FF8200;'>🎧 Aujourd'hui : {current['album']}</h2>", unsafe_allow_html=True)
+            
+            c_img, c_details = st.columns([1.2, 2])
+            
+            with c_img:
+                # Affichage de la pochette avec le style "Glow"
+                cover_url = current.get('cover_url', 'https://placehold.co/600x600/1E1E1E/FF8200?text=Musique')
+                st.markdown(f'<div class="cover-glow"><img src="{cover_url}" width="100%" style="border-radius:15px;"></div>', unsafe_allow_html=True)
+                
+                # --- 🔊 PLAYER EMBARQUÉ (GOAT FEATURE) ---
+                # On essaie de récupérer l'ID de l'album sur Spotify pour l'embed
+                try:
+                    search_res = sp.search(q=f"album:{current['album']} artist:{current['artiste']}", type='album', limit=1)
+                    if search_res['albums']['items']:
+                        album_id = search_res['albums']['items'][0]['id']
+                        st.write("")
+                        st.markdown(f'<iframe src="https://open.spotify.com/embed/album/{album_id}" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" style="border-radius:12px;"></iframe>', unsafe_allow_html=True)
+                except:
+                    st.caption("Lecteur Spotify indisponible")
+
+            with c_details:
+                # Infos Principales
+                st.markdown(f"<h1 style='margin-bottom:0px;'>{current.get('album', 'Inconnu')}</h1>", unsafe_allow_html=True)
+                st.markdown(f"<h3 style='color:#FF8200; margin-top:0px;'>{current.get('artiste', 'Inconnu')}</h3>", unsafe_allow_html=True)
+                
+                # Badges sécurisés
+                try: annee_val = str(int(float(current['annee'])))
+                except: annee_val = "N/A"
+
+                genre_val = current.get('genre', 'Inconnu')
+                pays_val = current.get('pays', '')
+                type_val = current.get('type', 'Standard')
+                
+                st.markdown(f"🗓️ **{annee_val}** | 🎵 **{genre_val}** | 🌍 **{pays_val}**")
+                st.markdown(f"📌 *Type d'écoute : {type_val}*")
+                
+                st.divider()
+
+                # --- 📚 LE SAVIEZ-VOUS ? (WIKIPEDIA CONTEXT) ---
+                with st.expander("📖 Un peu de culture (Wikipedia)", expanded=True):
+                    try:
+                        # On cherche le résumé de l'album
+                        wiki_summary = wikipedia.summary(f"Album {current.get('album', '')} {current.get('artiste', '')}", sentences=3, lang="fr")
+                        st.write(wiki_summary)
+                    except:
+                        st.write("Pas d'anecdote trouvée pour cet album, concentre-toi sur la musique !")
+
+            # --- 👑 LOGIQUE DU TRÔNE (GOAT DU MOIS) ---
+            st.write("")
+            mois_actuel = pd.to_datetime(current['date']).month
+            annee_actuelle = pd.to_datetime(current['date']).year
+            mask_goat = (df['ecoute'] == True) & (df['note'] == 6) & (pd.to_datetime(df['date']).dt.month == mois_actuel) & (pd.to_datetime(df['date']).dt.year == annee_actuelle)
+            df_goat = df[mask_goat]
+            
+            if not df_goat.empty:
+                roi = df_goat.iloc[0]
+                st.markdown(f"""
+                    <div style="background-color: rgba(255, 130, 0, 0.1); border: 1px solid #FF8200; padding: 15px; border-radius: 10px; text-align: center;">
+                        🔒 <b>Le trône de Mai est pris !</b><br>
+                        Le GOAT actuel est <b>{roi['artiste']}</b>. Rétrograde-le pour libérer la place.
+                    </div>
+                """, unsafe_allow_html=True)
+                note_max = 5
+            else:
+                st.markdown("""
+                    <div style="background-color: rgba(0, 154, 68, 0.1); border: 1px solid #009A44; padding: 15px; border-radius: 10px; text-align: center;">
+                        👑 <b>La place de GOAT est libre !</b><br>
+                        Est-ce que cet album va gâter le coin aujourd'hui ?
+                    </div>
+                """, unsafe_allow_html=True)
+                note_max = 6
+
+            # --- 🎙️ FORMULAIRE DE VERDICT ---
+            with st.form("verdict_final"):
+                c_n, c_p = st.columns([2, 1])
+                with c_n: 
+                    v_note = st.slider("Ta Note (6 = GOAT 🐐)", 1, note_max, 4)
+                with c_p:
+                    v_pays = st.text_input("Drapeau", value=current['pays'])
+                
+                v_avis = st.text_area("Ton avis (Nouchi autorisé !)", placeholder="Alors, ça dit quoi ?")
+                v_connu = st.checkbox("Je connaissais déjà (Classique)", value=current['deja_connu'])
+                
+                if st.form_submit_button("✅ VALIDER L'ÉCOUTE", use_container_width=True):
+                    df.at[real_idx, 'ecoute'], df.at[real_idx, 'note'], df.at[real_idx, 'avis'], df.at[real_idx, 'deja_connu'], df.at[real_idx, 'pays'] = True, v_note, v_avis, v_connu, v_pays
+                    save_data(df)
+                    st.balloons()
+                    time.sleep(1)
+                    st.rerun()
 
     # --- TAB 2 : STATS & RATTRAPAGE ---
     with tab2:
-        col1, col2 = st.columns(2)
-        with col1:
-            st.subheader("🔥 Zone de Rattrapage")
-            if nb_retard > 0:
-                st.warning(f"Tu as {nb_retard} album(s) de retard.")
-                for _, row in df_retard.iterrows(): st.markdown(f"- **{row['date']}** : {row['artiste']} - *{row['album']}*")
-            else: st.success("Tu es parfaitement à jour !")
-        with col2:
-            st.subheader("📈 Tes Artistes Favoris")
-            df_ecoutes = df[df['ecoute'] == True].copy()
-            if not df_ecoutes.empty:
-                comptes_artistes = df_ecoutes['artiste'].value_counts()
-                artistes_valides = comptes_artistes[comptes_artistes >= 2].index
-                df_filtre = df_ecoutes[df_ecoutes['artiste'].isin(artistes_valides)]
-                if not df_filtre.empty:
-                    top_artistes = df_filtre.groupby('artiste')['note'].mean().sort_values(ascending=False).head(5)
-                    st.bar_chart(top_artistes, color="#FF8200")
-                else: st.info("Aucun artiste n'a encore atteint 2 albums écoutés.")
+        st.markdown("<h2 style='text-align:center;'>📊 Le Bilan & 🚨 Rattrapage</h2>", unsafe_allow_html=True)
 
-                st.subheader("⭐ Répartition des Notes")
+        df_ecoutes = df[df['ecoute'] == True].copy()
+
+        # --- 🏆 PARTIE 1 : LES STATS CLÉS (KPIs) ---
+        if not df_ecoutes.empty:
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("💿 Écoutés", f"{len(df_ecoutes)} / 365")
+            c2.metric("⭐ Moyenne", f"{round(df_ecoutes['note'].mean(), 2)} / 6")
+            
+            nb_decouvertes = len(df_ecoutes[df_ecoutes['deja_connu'] == False])
+            c3.metric("🟢 Découvertes", nb_decouvertes)
+            
+            nb_pays = df_ecoutes['pays'].nunique()
+            c4.metric("🌍 Pays explorés", nb_pays)
+            st.divider()
+
+        # --- 🚨 PARTIE 2 : LE RATTRAPAGE INTELLIGENT ---
+        st.subheader("🚨 Zone de Rattrapage (Y a drap ?)")
+        # On calcule si tu as raté des jours par rapport à la date d'aujourd'hui
+        df['dt_obj'] = pd.to_datetime(df['date'], errors='coerce')
+        today = pd.Timestamp.today().normalize()
+
+        # Un album est en retard si sa date est passée ET qu'il n'est pas écouté
+        df_retard = df[(df['dt_obj'] < today) & (df['ecoute'] == False)].copy()
+
+        if df_retard.empty:
+            st.success("🎉 Tu es parfaitement à jour ! Aucun album en retard, tu gères le programme comme un pro !")
+        else:
+            st.warning(f"⚠️ Aïe ! Tu as **{len(df_retard)} album(s)** en retard. Faut pas blaguer avec l'odyssée !")
+            # On affiche un joli tableau épuré avec juste l'essentiel
+            st.dataframe(
+                df_retard[['date', 'artiste', 'album', 'genre', 'pays']], 
+                use_container_width=True, 
+                hide_index=True
+            )
+
+        st.divider()
+
+        # --- 📈 PARTIE 3 : LES GRAPHIQUES D'ANALYSE ---
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.subheader("🎵 Tes Genres Musicaux")
+            if not df_ecoutes.empty and 'genre' in df_ecoutes.columns:
+                # On prend les 7 genres les plus écoutés
+                genre_counts = df_ecoutes['genre'].value_counts().head(7)
+                st.bar_chart(genre_counts, color="#FF8200")
+            else:
+                st.info("Pas encore assez de données.")
+
+            st.subheader("⭐ Répartition des Notes")
+            if not df_ecoutes.empty:
                 st.bar_chart(df_ecoutes['note'].value_counts().sort_index(), color="#009A44")
 
-                # 🟢 NOUVEAU : STATS TEMPORELLES (DÉCENNIES)
-                st.subheader("⏳ Voyage dans le Temps")
-                # On nettoie la colonne année (ex: "2015.0" devient 2015)
+        with col2:
+            st.subheader("👑 Artistes Favoris (Moyenne)")
+            if not df_ecoutes.empty:
+                # --- NOUVELLE LOGIQUE ULTRA-PRÉCISE ---
+                total_counts = df['artiste'].value_counts() # Combien d'albums prévus au total
+                listened_counts = df_ecoutes['artiste'].value_counts() # Combien d'albums déjà écoutés
+
+                artistes_valides = []
+                for artiste, c_listened in listened_counts.items():
+                    c_total = total_counts.get(artiste, 0)
+                    # Condition : Au moins 3 écoutes OU 100% des albums prévus pour cet artiste ont été écoutés
+                    if c_listened >= 3 or c_listened == c_total:
+                        artistes_valides.append(artiste)
+
+                df_filtre = df_ecoutes[df_ecoutes['artiste'].isin(artistes_valides)]
+
+                if not df_filtre.empty:
+                    top_artistes = df_filtre.groupby('artiste')['note'].mean().sort_values(ascending=False).head(5)
+                    st.bar_chart(top_artistes, color="#9c27b0")
+                else:
+                    st.info("Aucun artiste ne remplit les critères (3 albums écoutés, ou 100% de sa disco prévue terminée).")
+
+            st.subheader("⏳ Voyage dans le Temps")
+            if not df_ecoutes.empty:
                 df_ecoutes['annee_propre'] = pd.to_numeric(df_ecoutes['annee'], errors='coerce').fillna(0).astype(int)
-                df_annees = df_ecoutes[df_ecoutes['annee_propre'] > 1900]
+                df_annees = df_ecoutes[df_ecoutes['annee_propre'] > 1900].copy()
                 if not df_annees.empty:
-                    # On groupe par décennie (1990, 2000, 2010...)
+                    # On groupe par décennie (ex: 1990, 2000)
                     df_annees['decennie'] = (df_annees['annee_propre'] // 10) * 10
                     decennies_counts = df_annees['decennie'].value_counts().sort_index()
                     decennies_counts.index = decennies_counts.index.astype(str) + "s"
                     st.bar_chart(decennies_counts, color="#17a2b8")
+
     # --- TAB 3 : CALENDRIER & GALERIE ---
     with tab3:
         view_mode = st.radio("Vue :", ["Liste 📱", "Grille 🖥️", "Galerie 🖼️"], horizontal=True, label_visibility="collapsed")
