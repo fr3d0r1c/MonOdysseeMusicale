@@ -249,22 +249,37 @@ if not df.empty:
 
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🎧 À l'écoute", "📊 Stats & Rattrapage", "📅 Calendrier", "🏆 Découvertes", "🔄 Classiques", "🎁 Wrapped"])
 
-    # --- 🎯 DÉFINITION DE L'ALBUM DU JOUR ---
+    # --- 🎯 DÉFINITION DE L'ALBUM DU JOUR (LOGIQUE SMART) ---
+    today_iso = date.today().isoformat()
     df_today = df[df['date'] == today_iso]
 
+    current = None
+    real_idx = None
+    mission_accomplie = False
+
     if not df_today.empty:
-        # On prend l'album d'aujourd'hui
-        real_idx = df_today.index[0]
-        current = df.loc[real_idx]
-    else:
-        # Si rien aujourd'hui, on prend le premier album en retard
-        df_todo = df[(df['date'] < today_iso) & (df['ecoute'] == False)]
-        if not df_todo.empty:
-            real_idx = df_todo.index[0]
+        row_today = df_today.iloc[0]
+        if row_today['ecoute'] == False:
+            # 1. On a un album aujourd'hui et il n'est pas fait
+            real_idx = df_today.index[0]
             current = df.loc[real_idx]
         else:
-            current = None
-            real_idx = None
+            # 2. L'album du jour est FAIT. Est-ce qu'il reste du retard ?
+            df_retard = df[(df['date'] < today_iso) & (df['ecoute'] == False)]
+            if not df_retard.empty:
+                real_idx = df_retard.index[0]
+                current = df.loc[real_idx]
+            else:
+                # 3. Tout est fini pour aujourd'hui !
+                mission_accomplie = True
+    else:
+        # Pas d'album prévu aujourd'hui, on check quand même le retard
+        df_retard = df[(df['date'] < today_iso) & (df['ecoute'] == False)]
+        if not df_retard.empty:
+            real_idx = df_retard.index[0]
+            current = df.loc[real_idx]
+        else:
+            mission_accomplie = True
 
     # --- TAB 1 : LE PLAYER ---
     with tab1:
@@ -283,8 +298,20 @@ if not df.empty:
             </style>
         """, unsafe_allow_html=True)
 
-        if current is None or current.empty:
-            st.success("🎉 Odyssée à jour ! Pose ton casque, tu as tout écouté.")
+        if mission_accomplie:
+            st.write("")
+            st.write("")
+            st.markdown(f"""
+                <div style="text-align: center; padding: 40px; border-radius: 20px; background-color: rgba(0, 154, 68, 0.1); border: 2px solid #009A44;">
+                    <h1 style="font-size: 4em; margin-bottom: 20px;">🌅</h1>
+                    <h2 style="color: white;">Mission accomplie pour aujourd'hui !</h2>
+                    <p style="font-size: 1.3em; color: #FF8200; font-weight: bold;">
+                        Pas d'album à écouter, revenez demain pour continuer votre voyage musical.
+                    </p>
+                    <p style="color: gray;">Profite de tes découvertes précédentes en attendant !</p>
+                </div>
+            """, unsafe_allow_html=True)
+            st.balloons() # Optionnel : une petite fête à chaque fois que tu ouvres l'app et que c'est fini
         else:
             # --- 🌟 HEADER DYNAMIQUE ---
             st.markdown(f"<h2 style='text-align:center; color:#FF8200;'>🎧 Aujourd'hui : {current['album']}</h2>", unsafe_allow_html=True)
