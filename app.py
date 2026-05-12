@@ -1,3 +1,5 @@
+import random
+
 import streamlit as st
 import pandas as pd
 import json
@@ -233,102 +235,133 @@ if not df.empty:
     st.progress(progress_bar_display)
 
     # ==========================================
-    # ⚙️ BARRE LATÉRALE : CENTRE DE CONTRÔLE
+    # ⚙️ BARRE LATÉRALE : LE COCKPIT AOTY
     # ==========================================
     with st.sidebar:
-        st.markdown("<h2 style='text-align: center; color: #FF8200;'>🛠️ Centre de Contrôle</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; color: #FF8200;'>🎛️ Centre de Contrôle</h2>", unsafe_allow_html=True)
         st.write("")
 
-        st.subheader("🔍 Édition Rapide")
-        st.caption("Modifie un album déjà écouté ou rattrape un retard facilement.")
-
-        # Tri alphabétique pour retrouver plus facilement les albums
-        df_sorted_alpha = df.sort_values(by="artiste")
-        options_dict = {f"{r.get('pays', '')} {r['artiste']} - {r['album']}": i for i, r in df_sorted_alpha.iterrows()}
+        # --- 🎮 1. GAMIFICATION : RANGS MÉTISSÉS (BASKET / GRAMMY / ARGOT) ---
+        nb_valide = len(df[df['ecoute'] == True])
         
-        choix = st.selectbox("Rechercher un album :", ["-- Sélectionner --"] + list(options_dict.keys()))
+        if nb_valide < 50: 
+            rang, couleur, icon = "Rookie / Le Petit Gaou", "#6c757d", "🐣"
+            desc = "Tu cherches encore tes marques sur le terrain."
+        elif nb_valide < 150: 
+            rang, couleur, icon = "6th Man / Enjailleur Nommé", "#17a2b8", "🥈"
+            desc = "Tu rentres dans le game, le public commence à applaudir."
+        elif nb_valide < 250: 
+            rang, couleur, icon = "All-Star / Maîtrise Kpata", "#28a745", "🥇"
+            desc = "Le goût de ça est versé ! Tu es un cadre du mouvement."
+        elif nb_valide < 365: 
+            rang, couleur, icon = "MVP / Vieux Père du Grammy", "#FF8200", "💎"
+            desc = "Il a gâté le coin ! Tu es à une marche du panthéon."
+        else: 
+            rang, couleur, icon = "GOAT / AOTY / Chef du Village", "#EF4135", "👑"
+            desc = "Vrai Boro d'enjaillement. Tu es devenu le dôme musical."
 
-        if choix != "-- Sélectionner --":
-            idx_sel = options_dict[choix]
-            row_sel = df.loc[idx_sel]
-
-            # --- 🖼️ MINI-CARTE DE L'ALBUM ---
-            with st.container(border=True):
-                c_img, c_txt = st.columns([1, 2.5])
-                with c_img:
-                    st.image(row_sel.get('cover_url', 'https://placehold.co/150x150/1E1E1E/FF8200?text=Musique'), use_container_width=True)
-                with c_txt:
-                    st.markdown(f"<b style='font-size:1.1em;'>{row_sel['artiste']}</b>", unsafe_allow_html=True)
-                    st.markdown(f"<i style='font-size:0.9em; color:gray;'>{row_sel['album']}</i>", unsafe_allow_html=True)
-                    
-                    if row_sel['ecoute']:
-                        st.markdown(f"<span style='color:#009A44; font-size:0.85em; font-weight:bold;'>✅ Fait ({row_sel['note']}/5)</span>", unsafe_allow_html=True)
-                    else:
-                        st.markdown("<span style='color:#EF4135; font-size:0.85em; font-weight:bold;'>⏳ En attente</span>", unsafe_allow_html=True)
-
-            # --- 🎛️ LOGIQUE DU SLIDER (Max 5, sauf si déjà élu GOAT/AOTY) ---
-            try: note_actuelle = int(row_sel['note']) 
-            except: note_actuelle = 0
-
-            # Si l'album a été couronné 6 ou 7 dans la cérémonie, le slider s'adapte pour ne pas casser la note
-            note_max_sb = max(5, note_actuelle)
-            val_defaut = note_actuelle if note_actuelle > 0 else 4
-
-            with st.form(f"sidebar_form_{idx_sel}"):
-                s_note = st.slider("Note de l'album", 1, note_max_sb, val_defaut)
-                s_avis = st.text_area("Ton avis", value=str(row_sel.get('avis', '')))
-                
-                c_pays, c_connu = st.columns([1.5, 1])
-                with c_pays:
-                    s_pays = st.text_input("Drapeau / Pays", value=str(row_sel.get('pays', '')))
-                with c_connu:
-                    st.write("") # Petit espace pour aligner la case à cocher avec le texte
-                    st.write("")
-                    s_connu = st.checkbox("Classique", value=bool(row_sel.get('deja_connu', False)))
-
-                if st.form_submit_button("💾 Sauvegarder", use_container_width=True):
-                    df.at[idx_sel, 'ecoute'] = True
-                    df.at[idx_sel, 'note'] = s_note
-                    df.at[idx_sel, 'avis'] = s_avis
-                    df.at[idx_sel, 'deja_connu'] = s_connu
-                    df.at[idx_sel, 'pays'] = s_pays
-                    save_data(df)
-                    st.success("Modifications enregistrées !")
-                    time.sleep(1)
-                    st.rerun()
-              
+        st.markdown(f"""
+<div style="background: #1A1C23; padding: 15px; border-radius: 15px; text-align: center; border: 1px solid {couleur}; box-shadow: 0 0 15px {couleur}40;">
+<p style="margin: 0; color: gray; font-size: 0.8em; text-transform: uppercase;">Ton Statut Actuel</p>
+<h3 style="margin: 5px 0; color: {couleur}; line-height:1.2;">{icon}<br>{rang}</h3>
+<p style="margin: 5px 0; font-size: 0.85em; color: #ddd; font-style: italic;">"{desc}"</p>
+<p style="margin: 10px 0 0 0; font-size: 0.9em;">🔥 <b>{nb_valide}</b> albums validés</p>
+</div>
+""", unsafe_allow_html=True)
+        
         st.divider()
 
-        # --- ⚙️ OUTILS D'ADMINISTRATION ---
-        with st.expander("⚙️ Outils d'Administration", expanded=False):
-            st.caption("Télécharge les pochettes et années manquantes depuis Spotify.")
-            if st.button("🔄 Lancer l'aspirateur Spotify", use_container_width=True):
-                # On cible les cases vides OU les fausses pochettes générées par défaut
+        # --- 🎲 2. LA ROULETTE DISCOVERY (SPOTIFY API) ---
+        st.subheader("🎲 Roulette Discovery")
+        st.caption("Découvre un album hors de ta liste via Spotify.")
+        
+        type_decouverte = st.radio("Cible :", ["🔥 Nouveautés", "📜 Classiques"], horizontal=True)
+        
+        if st.button("Lancer la Roulette 🎰", width='stretch'):
+            with st.spinner("Recherche d'une pépite..."):
+                try:
+                    if "Nouveautés" in type_decouverte:
+                        # LA FEINTE : On fait une recherche classique filtrée sur l'année en cours
+                        annee_actuelle = date.today().year
+                        
+                        # On cherche des albums de l'année actuelle sans limite pour éviter le bug 400
+                        res = sp.search(q=f'year:{annee_actuelle}', type='album')
+                        
+                        if res['albums']['items']:
+                            album_hasard = random.choice(res['albums']['items'])
+                        else:
+                            raise Exception("Aucune nouveauté trouvée par Spotify.")
+                    else:
+                        # Cherche des classiques via des mots clés
+                        mots_cles = ["Masterpiece", "Greatest albums", "Classic hip hop", "Legendary Rock"]
+                        res = sp.search(q=random.choice(mots_cles), type='album') 
+                        
+                        if res['albums']['items']:
+                            album_hasard = random.choice(res['albums']['items'])
+                        else:
+                            raise Exception("Aucun classique trouvé.")
+                    
+                    # On vérifie si l'album n'est pas déjà dans notre liste (optionnel mais propre)
+                    deja_prevu = album_hasard['name'] in df['album'].values
+                    
+                    cover_h = album_hasard['images'][0]['url']
+                    artiste_h = album_hasard['artists'][0]['name']
+                    nom_h = album_hasard['name']
+                    
+                    st.session_state['roulette_ext'] = f"""
+<div style="background: #2D2D2D; padding: 15px; border-radius: 10px; text-align: center; margin-top: 10px; border: 1px solid #1DB954;">
+<p style="margin:0; font-size:0.7em; color:#1DB954; font-weight:bold;">✨ SUGGESTION SPOTIFY</p>
+<img src="{cover_h}" width="120" style="border-radius: 8px; margin: 10px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+<h4 style="margin: 0; color: white; line-height:1.1;">{nom_h}</h4>
+<p style="margin: 5px 0; color: #1DB954; font-weight: bold;">{artiste_h}</p>
+<p style="margin: 0; color: gray; font-size: 0.75em;">{'⚠️ Déjà dans ta liste' if deja_prevu else '💎 Inédit pour toi'}</p>
+<p style="margin-top:10px; font-size:0.7em; color:gray;">Ajoute-le en <b>Hors-Série</b> s'il te tente !</p>
+</div>
+"""
+                except Exception as e:
+                    st.error("Erreur de connexion Spotify")
+
+        if 'roulette_ext' in st.session_state:
+            st.markdown(st.session_state['roulette_ext'], unsafe_allow_html=True)
+            if st.button("Effacer la suggestion"):
+                del st.session_state['roulette_ext']
+                st.rerun()
+
+        st.divider()
+
+        # --- 💾 3. SAUVEGARDE & ADMIN ---
+        with st.expander("⚙️ Système & Export", expanded=False):
+            # Bouton d'export CSV
+            csv_data = df.to_csv(index=False).encode('utf-8')
+            st.download_button(
+                label="📥 Backup CSV (Excel)",
+                data=csv_data,
+                file_name=f"Odyssee_2026_{date.today().isoformat()}.csv",
+                mime="text/csv",
+                width='stretch'
+            )
+
+            st.write("")
+            
+            if st.button("🔄 Aspirateur Spotify", width='stretch'):
                 mask = (df['cover_url'] == "") | (df['cover_url'].str.contains("placehold.co", na=False)) | (df['cover_url'].isnull())
                 nb_a_faire = mask.sum()
-
                 if nb_a_faire > 0:
                     barre = st.progress(0)
-                    status_text = st.empty() # Création d'une zone de texte dynamique
-                    
+                    t_status = st.empty()
                     for i, idx in enumerate(df[mask].index):
-                        status_text.text(f"Recherche : {df.at[idx, 'artiste']}...") # Affiche l'album en cours
+                        t_status.text(f"Sync : {df.at[idx, 'artiste']}...")
                         infos = get_album_infos(df.at[idx, 'artiste'], df.at[idx, 'album'])
                         df.at[idx, 'cover_url'] = infos['cover']
                         df.at[idx, 'annee'] = infos['year']
                         barre.progress((i + 1) / nb_a_faire)
-
                     save_data(df)
-                    status_text.empty() # On efface le texte dynamique
-                    st.success(f"✅ {nb_a_faire} pochettes mises à jour !")
-                    time.sleep(2)
+                    t_status.empty()
+                    st.success("Mise à jour terminée !")
                     st.rerun()
-                else:
-                    st.info("✨ Ton odyssée est parfaite, tout est à jour !")
-                
 
     tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
-        "🎧 À l'écoute", "📊 Bilan", "📅 Calendrier", "🏆 Tier List", "🗄️ Archives", "🎁 Cérémonie", "➕ Hors-Série"
+        "🎧 À l'écoute", "📊 Bilan", "📅 Calendrier", "🏆 Tier List", "🗄️ Archives & Édition", "🎁 Cérémonie", "➕ Hors-Série"
     ])
 
     # --- 🎯 DÉFINITION DE L'ALBUM DU JOUR (LOGIQUE SMART) ---
@@ -363,137 +396,191 @@ if not df.empty:
         else:
             mission_accomplie = True
 
-    # --- TAB 1 : LE PLAYER ---
+    # ==========================================
+    # 🎧 TAB 1 : LA VITRINE (À L'ÉCOUTE)
+    # ==========================================
     with tab1:
-        # --- 🎨 STYLE CSS POUR LE GLOW DE LA POCHETTE ---
-        st.markdown("""
-            <style>
-                .cover-glow {
-                    box-shadow: 0 0 25px rgba(255, 130, 0, 0.3);
-                    border-radius: 15px;
-                    transition: transform 0.3s ease;
-                }
-                .cover-glow:hover {
-                    transform: scale(1.02);
-                    box-shadow: 0 0 35px rgba(255, 130, 0, 0.5);
-                }
-            </style>
-        """, unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align:center; color:#FF8200;'>🎧 L'Album du Jour</h1>", unsafe_allow_html=True)
+        st.write("")
 
-        if mission_accomplie:
-            st.write("")
-            st.write("")
-            st.markdown(f"""
-                <div style="text-align: center; padding: 40px; border-radius: 20px; background-color: rgba(0, 154, 68, 0.1); border: 2px solid #009A44;">
-                    <h1 style="font-size: 4em; margin-bottom: 20px;">🌅</h1>
-                    <h2 style="color: white;">Mission accomplie pour aujourd'hui !</h2>
-                    <p style="font-size: 1.3em; color: #FF8200; font-weight: bold;">
-                        Pas d'album à écouter, revenez demain pour continuer votre voyage musical.
-                    </p>
-                    <p style="color: gray;">Profite de tes découvertes précédentes en attendant !</p>
-                </div>
-            """, unsafe_allow_html=True)
-            st.balloons()
+        # 1. Identifier l'album à écouter (le plus ancien non validé jusqu'à aujourd'hui)
+        df_todo = df[(df['ecoute'] == False) & (df['date'] <= today_iso)].sort_values('date')
+
+        if df_todo.empty:
+            st.markdown("""
+<div style="background: linear-gradient(135deg, #009A44, #005a27); padding: 40px; border-radius: 20px; text-align: center; color: white; box-shadow: 0 10px 20px rgba(0,154,68,0.3);">
+<h1 style="font-size: 3em; margin:0;">🎉 MISSION ACCOMPLIE</h1>
+<h3 style="margin-top:10px;">Ton Odyssée est à jour ! Aucun album en retard.</h3>
+<p style="opacity: 0.8;">Reviens demain ou ajoute un Hors-Série depuis le Centre de Contrôle.</p>
+</div>
+""", unsafe_allow_html=True)
         else:
-            # --- 🌟 HEADER DYNAMIQUE ---
-            st.markdown(f"<h2 style='text-align:center; color:#FF8200;'>🎧 Aujourd'hui : {current.get('album', 'Inconnu')}</h2>", unsafe_allow_html=True)
+            album_jour = df_todo.iloc[0]
+            idx_jour = album_jour.name
+            
+            cover_url = album_jour.get('cover_url', 'https://placehold.co/300x300/1E1E1E/FF8200?text=Musique')
+            
+            # --- 🕵️‍♂️ API SPOTIFY : RÉCUPÉRATION DES STATS EN TEMPS RÉEL ---
+            
+            # Correction de l'affichage "2019.0" en "2019"
+            date_sortie = str(album_jour.get('annee', 'Inconnue'))
+            if date_sortie.endswith('.0'): 
+                date_sortie = date_sortie[:-2]
 
-            c_img, c_details = st.columns([1.2, 2])
-
-            with c_img:
-                # Affichage de la pochette avec le style "Glow"
-                cover_url = current.get('cover_url', 'https://placehold.co/600x600/1E1E1E/FF8200?text=Musique')
-                st.markdown(f'<div class="cover-glow"><img src="{cover_url}" width="100%" style="border-radius:15px;"></div>', unsafe_allow_html=True)
-
-                # --- 🔊 PLAYER EMBARQUÉ (GOAT FEATURE) ---
-                try:
-                    search_res = sp.search(q=f"album:{current.get('album', '')} artist:{current.get('artiste', '')}", type='album', limit=1)
-                    if search_res['albums']['items']:
-                        album_id = search_res['albums']['items'][0]['id']
-                        st.write("")
-                        st.markdown(f'<iframe src="https://open.spotify.com/embed/album/{album_id}" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" style="border-radius:12px;"></iframe>', unsafe_allow_html=True)
-                except:
-                    st.caption("Lecteur Spotify indisponible")
-
-            with c_details:
-                # Infos Principales
-                st.markdown(f"<h1 style='margin-bottom:0px;'>{current.get('album', 'Inconnu')}</h1>", unsafe_allow_html=True)
-                st.markdown(f"<h3 style='color:#FF8200; margin-top:0px;'>{current.get('artiste', 'Inconnu')}</h3>", unsafe_allow_html=True)
+            # 🛡️ LE BOUCLIER ANTI-SPAM : On ne cherche que si on a changé d'album du jour
+            if 'cache_stats_idx' not in st.session_state or st.session_state['cache_stats_idx'] != idx_jour:
+                # Valeurs par défaut
+                st.session_state['cache_stats_idx'] = idx_jour
+                st.session_state['cache_nb_titres'] = "❓"
+                st.session_state['cache_duree'] = "⏱️ Inconnue"
                 
-                # Badges sécurisés
-                try: annee_val = str(int(float(current['annee'])))
-                except: annee_val = "N/A"
-
-                genre_val = current.get('genre', 'Inconnu')
-                pays_val = current.get('pays', '')
-                type_val = current.get('type', 'Standard')
-                
-                st.markdown(f"🗓️ **{annee_val}** | 🎵 **{genre_val}** | 🌍 **{pays_val}**")
-                st.markdown(f"📌 *Type d'écoute : {type_val}*")
-
-                # --- 🚀 HUB D'ÉCOUTE (Raccourcis) ---
-                query = f"{current.get('artiste', '')} {current.get('album', '')}".replace(" ", "%20")
-                spot_url = f"https://open.spotify.com/search/{query}/albums"
-                yt_url = f"https://www.youtube.com/results?search_query={query}+full+album"
-                genius_url = f"https://genius.com/search?q={query}"
-
-                st.markdown(f"""
-                <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 15px; flex-wrap: wrap;">
-                    <a href="{spot_url}" target="_blank" style="text-decoration: none;">
-                        <div style="background-color: #1DB954; color: white; padding: 6px 12px; border-radius: 5px; font-weight: bold; font-size: 0.85em;">🎧 Spotify</div>
-                    </a>
-                    <a href="{yt_url}" target="_blank" style="text-decoration: none;">
-                        <div style="background-color: #FF0000; color: white; padding: 6px 12px; border-radius: 5px; font-weight: bold; font-size: 0.85em;">📺 YouTube</div>
-                    </a>
-                    <a href="{genius_url}" target="_blank" style="text-decoration: none;">
-                        <div style="background-color: #FFFF64; color: black; padding: 6px 12px; border-radius: 5px; font-weight: bold; font-size: 0.85em;">🎤 Paroles</div>
-                    </a>
-                </div>
-                """, unsafe_allow_html=True)
-
-                st.divider()
-
-                # --- 📚 LE SAVIEZ-VOUS ? ---
-                with st.expander("📖 Un peu de culture (Wikipedia)", expanded=True):
+                with st.spinner("Analyse des pistes audio via Spotify..."):
                     try:
-                        wiki_summary = wikipedia.summary(f"Album {current.get('album', '')} {current.get('artiste', '')}", sentences=3, lang="fr")
-                        st.write(wiki_summary)
-                    except:
-                        st.write("Pas d'anecdote trouvée pour cet album, concentre-toi sur la musique !")
+                        query = f"album:{album_jour['album']} artist:{album_jour['artiste']}"
+                        res = sp.search(q=query, type='album', limit=1)
+                        
+                        if not res['albums']['items']:
+                            res = sp.search(q=f"{album_jour['artiste']} {album_jour['album']}", type='album', limit=1)
+                            
+                        if res['albums']['items']:
+                            alb_data = res['albums']['items'][0]
+                            alb_id = alb_data['id']
+                            
+                            if 'total_tracks' in alb_data:
+                                st.session_state['cache_nb_titres'] = str(alb_data['total_tracks'])
+                            
+                            full_album = sp.album(alb_id)
+                            if 'tracks' in full_album and 'items' in full_album['tracks']:
+                                tracks_list = full_album['tracks']['items']
+                                duree_ms = sum([track.get('duration_ms', 0) for track in tracks_list])
+                                
+                                if duree_ms > 0:
+                                    minutes = duree_ms // 60000
+                                    st.session_state['cache_duree'] = f"{minutes} min"
+                                    
+                    except Exception as e:
+                        print(f"Erreur API Spotify: {e}")
 
-            st.write("")
+            # On charge les valeurs depuis la mémoire (0 requête Spotify !)
+            nb_titres = st.session_state['cache_nb_titres']
+            duree_txt = st.session_state['cache_duree']
+            
+            with st.spinner("Analyse des pistes audio via Spotify..."):
+                try:
+                    # 1. Recherche de l'album
+                    query = f"album:{album_jour['album']} artist:{album_jour['artiste']}"
+                    res = sp.search(q=query, type='album', limit=1)
+                    
+                    if not res['albums']['items']:
+                        # Plan B : Recherche plus large
+                        res = sp.search(q=f"{album_jour['artiste']} {album_jour['album']}", type='album', limit=1)
 
-            # --- 📝 LA ZONE DE NOTATION ---
+                    if res['albums']['items']:
+                        alb_data = res['albums']['items'][0]
+                        alb_id = alb_data['id']
+
+                        # 2. Récupération des infos de base
+                        if 'total_tracks' in alb_data:
+                            nb_titres = str(alb_data['total_tracks'])
+                        
+                        if 'release_date' in alb_data:
+                            date_sortie = alb_data['release_date'][:4]
+
+                        # 3. Récupération des pistes pour calculer la durée (avec un fetch direct de l'album)
+                        # On utilise sp.album() au lieu de sp.album_tracks() car c'est souvent plus complet
+                        full_album = sp.album(alb_id)
+                        if 'tracks' in full_album and 'items' in full_album['tracks']:
+                            tracks_list = full_album['tracks']['items']
+
+                            # Calcul de la durée totale en millisecondes
+                            duree_ms = sum([track.get('duration_ms', 0) for track in tracks_list])
+                            
+                            if duree_ms > 0:
+                                minutes = duree_ms // 60000
+                                duree_txt = f"{minutes} min"
+
+                except Exception as e:
+                    # Si ça plante, on affiche silencieusement dans la console mais l'appli continue
+                    print(f"Erreur Spotify Stats: {e}")
+
+            # --- 🖼️ L'AFFICHAGE VITRINE (SHOWCASE) ---
+            # Un fond assombri avec la pochette mise en valeur et les stats
+            html_showcase = f"""
+<div style="background: #1A1C23; border: 1px solid #333; border-radius: 25px; padding: 30px; display: flex; gap: 30px; flex-wrap: wrap; align-items: center; box-shadow: 0 15px 30px rgba(0,0,0,0.5); margin-bottom: 30px; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: #FF8200; filter: blur(100px); opacity: 0.2; border-radius: 50%;"></div>
+    
+    <div style="flex: 1; min-width: 200px; max-width: 300px;">
+        <img src="{cover_url}" width="100%" style="border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.6); border: 2px solid rgba(255,255,255,0.1);">
+    </div>
+    
+    <div style="flex: 2; min-width: 250px; z-index: 1;">
+        <p style="margin: 0; color: #FF8200; font-weight: bold; letter-spacing: 2px; font-size: 0.9em; text-transform: uppercase;">
+            {"⚠️ EN RETARD" if str(album_jour['date']) < today_iso else "💿 AU PROGRAMME"}
+        </p>
+        <h1 style="margin: 5px 0 0 0; font-size: 3em; line-height: 1.1; color: white;">{album_jour['album']}</h1>
+        <h2 style="margin: 10px 0 20px 0; color: #b3b3b3; font-weight: normal;">par <b style="color:white;">{album_jour['artiste']}</b></h2>
+        
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 10px; color: white; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.05);">
+                📅 Sortie : <b>{date_sortie}</b>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 10px; color: white; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.05);">
+                🎵 <b>{nb_titres}</b> titres
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 10px; color: white; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.05);">
+                ⏱️ <b>{duree_txt}</b>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 10px; color: white; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.05);">
+                🌍 {album_jour.get('pays', 'Inconnu')}
+            </div>
+        </div>
+    </div>
+</div>
+"""
+            st.markdown(html_showcase.replace('\n', '').strip(), unsafe_allow_html=True)
+
+            # --- ⚖️ LA ZONE DE VERDICT (FORMULAIRE AMÉLIORÉ) ---
+            st.markdown("<h3 style='text-align:center; color:#1DB954;'>⚖️ Le Studio du Critique</h3>", unsafe_allow_html=True)
+            
             with st.container(border=True):
-                st.info("⭐ La note maximale au quotidien est de **5/5**. Le GOAT (6/6) sera élu à la fin du mois dans la Cérémonie !")
-
-                with st.form("main_notation_form"):
-                    st.write("### 🎙️ Ton verdict")
-                    c_note, c_pays = st.columns([3, 1])
-                    with c_note: 
-                        val_note = st.slider("⭐ Note (5 = Classique Absolu 🔥)", 1, 5, 4)
-                    with c_pays:
-                        val_pays = st.text_input("Pays / Drapeau", value=current.get('pays', ''))
-
-                    val_avis = st.text_area("Ta critique", height=100)
-                    val_connu = st.checkbox("Je connaissais déjà cet album", value=bool(current.get('deja_connu', False)))
-
-                    submit = st.form_submit_button("✅ Valider l'écoute", width='stretch')
-
-                    if submit:
-                        df.at[real_idx, 'ecoute'] = True
-                        df.at[real_idx, 'note'] = val_note
-                        df.at[real_idx, 'avis'] = val_avis
-                        df.at[real_idx, 'deja_connu'] = val_connu
-                        df.at[real_idx, 'pays'] = val_pays
+                with st.form(f"verdict_form_{idx_jour}", border=False):
+                    c_note, c_options = st.columns([2, 1])
+                    
+                    with c_note:
+                        s_note = st.slider("⭐ Ta Note (sur 5)", 1, 5, 4, help="1: Éclaté | 3: Pas mal | 5: Masterclass")
+                        s_avis = st.text_area("📝 Ta Critique", placeholder="Qu'as-tu pensé de cet album ? Écris ton avis pour la postérité...", height=110)
+                        
+                    with c_options:
+                        st.write("🔧 **Précisions**")
+                        s_genre = st.text_input("Genre", value=str(album_jour.get('genre', '')))
+                        s_pays = st.text_input("Pays/Drapeau", value=str(album_jour.get('pays', '')))
+                        s_connu = st.checkbox("Je connaissais déjà (Classique)", value=bool(album_jour.get('deja_connu', False)))
+                    
+                    st.write("")
+                    btn_valider = st.form_submit_button("🔥 RENDRE MON VERDICT", width='stretch', type="primary")
+                    
+                    if btn_valider:
+                        df.at[idx_jour, 'ecoute'] = True
+                        df.at[idx_jour, 'note'] = s_note
+                        df.at[idx_jour, 'avis'] = s_avis
+                        df.at[idx_jour, 'genre'] = s_genre
+                        df.at[idx_jour, 'pays'] = s_pays
+                        df.at[idx_jour, 'deja_connu'] = s_connu
                         save_data(df)
-                        st.balloons()
+                        
+                        # Célébration si note max !
+                        if s_note == 5:
+                            st.balloons()
+                            st.success("Un S-Tier a été validé ! N'oublie pas de l'élire GOAT en fin de mois.")
+                        else:
+                            st.success("Verdict enregistré avec succès !")
+                            
                         time.sleep(1.5)
                         st.rerun()
 
     # --- TAB 2 : STATS & RATTRAPAGE ---
     with tab2:
-        st.markdown("<h1 style='text-align:center; color:#FF8200;'>📊 Le Bilan de l'Odyssée</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align:center;'>📊 Le Bilan de l'Odyssée</h1>", unsafe_allow_html=True)
 
         df_ecoutes = df[df['ecoute'] == True].copy()
 
@@ -616,81 +703,162 @@ if not df.empty:
                     st.bar_chart(decennies_counts, color="#17a2b8")
 
     # --- TAB 3 : CALENDRIER & GALERIE ---
+    # ==========================================
+    # 📅 TAB 3 : LE CALENDRIER DE L'ODYSSÉE
+    # ==========================================
     with tab3:
         st.markdown("<h1 style='text-align:center; color:#FF8200;'>📅 Le Calendrier de l'Odyssée</h1>", unsafe_allow_html=True)
+        
+        # --- 🚀 LE PROCHAIN ARRÊT (NEXT UP BANNER) AVEC VINYLE ANIMÉ ---
+        df_upcoming = df[(df['ecoute'] == False) & (df['date'] >= today_iso)].sort_values('date')
+        
+        if not df_upcoming.empty:
+            next_up = df_upcoming.iloc[0]
+            next_date_fr = pd.to_datetime(next_up['date']).strftime('%d/%m')
+            next_cover = next_up.get('cover_url', 'https://placehold.co/300x300/1E1E1E/FF8200?text=Musique')
 
-        view_mode = st.radio("Vue :", ["Liste 📱", "Grille 🖥️", "Galerie 🖼️"], horizontal=True, label_visibility="collapsed")
-        st.write("") # Petit espace de respiration
+            # ATTENTION : Tout est collé à gauche pour éviter le bug d'affichage !
+            html_banner = f"""
+<style>
+@keyframes spin_vinyl {{
+from {{ transform: rotate(0deg); }}
+to {{ transform: rotate(360deg); }}
+}}
+.vinyl-container {{
+width: 100px; height: 100px; position: relative; margin-left: auto; margin-right: 10px;
+}}
+.vinyl-disc {{
+width: 100%; height: 100%; background-color: #111; border-radius: 50%;
+background-image: repeating-radial-gradient(circle, #111, #111 2px, #222 3px, #111 4px);
+display: flex; align-items: center; justify-content: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+animation: spin_vinyl 6s linear infinite;
+}}
+.vinyl-label {{
+width: 45px; height: 45px; border-radius: 50%;
+background-image: url('{next_cover}'); background-size: cover; background-position: center;
+border: 2px solid #333; position: relative;
+}}
+.vinyl-hole {{
+width: 6px; height: 6px; background-color: #0E1117; border-radius: 50%;
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}}
+</style>
+<div style="background: linear-gradient(90deg, #1E1E1E 0%, #2D2D2D 100%); border-left: 5px solid #FF8200; padding: 15px 25px; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); overflow: hidden;">
+<div>
+<p style="margin: 0; color: #FF8200; font-weight: bold; font-size: 0.9em; text-transform: uppercase;">🔜 Prochain Arrêt ({next_date_fr})</p>
+<h3 style="margin: 5px 0 0 0; color: white; font-size: 1.8em;">{next_up['album']}</h3>
+<p style="margin: 0; color: gray; font-size: 1.1em;">{next_up['artiste']} {next_up.get('pays', '')}</p>
+</div>
+<div class="vinyl-container">
+<div class="vinyl-disc">
+<div class="vinyl-label">
+<div class="vinyl-hole"></div>
+</div>
+</div>
+</div>
+</div>
+"""
+            st.markdown(html_banner.replace('\n', '').strip(), unsafe_allow_html=True)
+        else:
+            st.markdown("""
+<div style="background: rgba(0, 154, 68, 0.1); border-left: 5px solid #009A44; padding: 15px; border-radius: 10px; margin-bottom: 25px;">
+<h3 style="margin: 0; color: #009A44;">🎉 Tous les albums programmés ont été écoutés !</h3>
+<p style="margin: 0; color: gray;">Tu peux continuer à ajouter des Hors-Séries.</p>
+</div>
+""", unsafe_allow_html=True)
 
+        # --- RESTE DU CODE DU CALENDRIER ---
+        view_mode = st.radio("Vue :", ["Galerie 🖼️", "Grille 🖥️", "Liste 📱"], horizontal=True, label_visibility="collapsed")
+        st.write("") 
+        
         if view_mode == "Galerie 🖼️":
             df['dt_obj'] = pd.to_datetime(df['date'])
-            # Dictionnaire robuste pour forcer le français peu importe le serveur
             mois_fr = {1: "Janvier", 2: "Février", 3: "Mars", 4: "Avril", 5: "Mai", 6: "Juin", 7: "Juillet", 8: "Août", 9: "Septembre", 10: "Octobre", 11: "Novembre", 12: "Décembre"}
             
             for month_num in range(1, 13):
                 df_month = df[df['dt_obj'].dt.month == month_num]
                 if not df_month.empty:
                     annee = df_month.iloc[0]['dt_obj'].year
-                    month_name = f"{mois_fr[month_num]} {annee}"
+                    nb_done = len(df_month[df_month['ecoute'] == True])
+                    total_m = len(df_month)
+                    month_name = f"{mois_fr[month_num]} {annee} ({nb_done}/{total_m} accomplis)"
                     
                     with st.expander(f"📅 {month_name}", expanded=(month_num == date.today().month)):
                         cols = st.columns(4)
                         for i, (_, row) in enumerate(df_month.iterrows()):
                             with cols[i % 4]:
-                                with st.container(border=True):
-                                    # Pochette avec effet Glow (réutilise le CSS du tab1)
-                                    cover_url = row.get('cover_url', 'https://placehold.co/300x300/1E1E1E/FF8200?text=Musique')
-                                    st.markdown(f'<div class="cover-glow"><img src="{cover_url}" width="100%" style="border-radius:10px; margin-bottom:10px;"></div>', unsafe_allow_html=True)
-                                    
-                                    # Informations de l'album
-                                    st.markdown(f"<h4 style='text-align:center; margin-bottom:0px; line-height: 1.2;'>{row.get('album', 'Inconnu')}</h4>", unsafe_allow_html=True)
-                                    st.markdown(f"<p style='text-align:center; color:#FF8200; font-weight:bold; margin-top:5px;'>{row.get('pays', '')} {row.get('artiste', 'Inconnu')}</p>", unsafe_allow_html=True)
-                                    
-                                    # Affichage des Notes et Statuts
-                                    if row['ecoute']:
-                                        note = row.get('note', 0)
-                                        # Affichage dynamique de la note
-                                        if note == 7: stars = "🌟 <b>AOTY</b> 🌟"
-                                        elif note == 6: stars = "👑 <b>GOAT</b>"
-                                        else: stars = "⭐" * int(note)
-                                        
-                                        st.markdown(f"<p style='text-align:center; margin-bottom:5px; font-size:1.1em;'>{stars}</p>", unsafe_allow_html=True)
-                                        
-                                        # Badge de découverte
-                                        badge_color = "#17a2b8" if row['deja_connu'] else "#28a745"
-                                        badge_text = "Classique" if row['deja_connu'] else "Découverte"
-                                        st.markdown(f"<div style='text-align:center;'><span style='background:{badge_color}; color:white; padding: 4px 10px; border-radius: 12px; font-size: 0.8em; font-weight:bold;'>{badge_text}</span></div>", unsafe_allow_html=True)
+                                note = row.get('note', 0) if row['ecoute'] else 0
+                                border_style = "border: 1px solid rgba(255,255,255,0.1);"
+                                shadow = ""
+                                if note == 7:
+                                    border_style = "border: 2px solid #EF4135;"
+                                    shadow = "box-shadow: 0 0 15px rgba(239, 65, 53, 0.4);"
+                                elif note == 6:
+                                    border_style = "border: 2px solid #FF8200;"
+                                    shadow = "box-shadow: 0 0 15px rgba(255, 130, 0, 0.3);"
+
+                                cover_url = row.get('cover_url', 'https://placehold.co/300x300/1E1E1E/FF8200?text=Musique')
+                                
+                                # HTML 100% à gauche pour la Galerie
+                                html_card = f"""
+<div style="background: #1A1C23; {border_style} {shadow} padding: 15px; border-radius: 15px; height: 100%; display: flex; flex-direction: column; align-items: center; margin-bottom: 15px; transition: transform 0.2s ease;">
+<img src="{cover_url}" width="100%" style="border-radius:10px; margin-bottom:10px;">
+<h4 style="text-align:center; margin:0px; line-height: 1.2; font-size:1em; color:white;">{row.get('album', 'Inconnu')}</h4>
+<p style="text-align:center; color:gray; font-size:0.85em; margin:5px 0;">{row.get('pays', '')} {row.get('artiste', 'Inconnu')}</p>
+"""
+                                if row['ecoute']:
+                                    if note == 7: stars = "🌟 <b style='color:#EF4135'>AOTY</b> 🌟"
+                                    elif note == 6: stars = "👑 <b style='color:#FF8200'>GOAT</b>"
+                                    else: stars = "⭐" * int(note)
+                                    badge_color = "#17a2b8" if row['deja_connu'] else "#28a745"
+                                    badge_text = "Classique" if row['deja_connu'] else "Découverte"
+                                    html_card += f"""
+<p style="text-align:center; margin:5px 0 10px 0; font-size:1em;">{stars}</p>
+<span style="background:{badge_color}; color:white; padding: 4px 10px; border-radius: 12px; font-size: 0.75em; font-weight:bold;">{badge_text}</span>
+</div>
+"""
+                                else:
+                                    date_str = row['dt_obj'].strftime('%d/%m')
+                                    if str(row['date']) < today_iso:
+                                        html_card += f"""
+<div style="margin-top:auto;"><span style="background:#dc3545; color:white; padding: 4px 10px; border-radius: 12px; font-size: 0.75em; font-weight:bold;">⚠️ Retard ({date_str})</span></div>
+</div>
+"""
                                     else:
-                                        date_str = row['dt_obj'].strftime('%d/%m')
-                                        if str(row['date']) < today_iso:
-                                            st.markdown(f"<div style='text-align:center;'><span style='background:#EF4135; color:white; padding: 4px 10px; border-radius: 12px; font-size: 0.8em; font-weight:bold;'>⚠️ Retard ({date_str})</span></div>", unsafe_allow_html=True)
-                                        else:
-                                            st.markdown(f"<div style='text-align:center;'><span style='background:#6c757d; color:white; padding: 4px 10px; border-radius: 12px; font-size: 0.8em; font-weight:bold;'>⏳ Prévu le {date_str}</span></div>", unsafe_allow_html=True)
+                                        html_card += f"""
+<div style="margin-top:auto;"><span style="background:#6c757d; color:white; padding: 4px 10px; border-radius: 12px; font-size: 0.75em; font-weight:bold;">⏳ Prévu le {date_str}</span></div>
+</div>
+"""
+                                st.markdown(html_card.replace('\n', '').strip(), unsafe_allow_html=True)
         else:
             events = []
             for _, r in df.iterrows():
-                # On ajoute ENFIN le nom de l'album dans le calendrier !
                 evt_title = f"{r.get('pays', '')} {r.get('artiste', '')} - {r.get('album', '')}"
-
                 if r['ecoute']: 
-                    # Si c'est un GOAT ou AOTY, on le met en orange bien visible dans le calendrier !
-                    if r.get('note', 0) >= 6:
-                        color = "#FF8200"
-                        icon = "🌟" if r.get('note', 0) == 7 else "👑"
+                    if r.get('note', 0) == 7:
+                        color, icon = "#EF4135", "🌟"
+                    elif r.get('note', 0) >= 6:
+                        color, icon = "#FF8200", "👑"
                     else:
                         color = "#17a2b8" if r['deja_connu'] else "#28a745"
                         icon = "🔄" if r['deja_connu'] else "✅"
                     title = f"{icon} {evt_title}"
-                elif str(r['date']) < today_iso:
-                    color, title = "#EF4135", f"⚠️ {evt_title}"
+                elif str(r['date']) < today_iso: 
+                    color, title = "#dc3545", f"⚠️ {evt_title}"
                 else: 
                     color, title = "#6c757d", f"🎵 {evt_title}"
-
-                events.append({"title": title, "start": str(r['date']), "allDay": True, "backgroundColor": color, "borderColor": color})
-
+                events.append({"title": title, "start": str(r['date']), "allDay": True, "backgroundColor": color, "borderColor": color, "textColor": "white"})
+            
             cal_mode = "listMonth" if "Liste" in view_mode else "dayGridMonth"
-            # initialDate paramétrée sur le jour actuel (today_iso) ! Et bouton "today" rajouté dans la toolbar.
-            calendar(events=events, options={"initialDate": today_iso, "locale": "fr", "headerToolbar": {"left": "prev,next today", "center": "title", "right": ""}, "initialView": cal_mode, "height": "750px"}, key=f"cal_{view_mode}")
+            calendar(events=events, options={
+                "initialDate": today_iso, 
+                "locale": "fr", 
+                "headerToolbar": {"left": "prev,next today", "center": "title", "right": ""}, 
+                "initialView": cal_mode, 
+                "height": "750px",
+                "eventDisplay": "block"
+            }, key=f"cal_{view_mode}")
 
     # --- 🛠️ FONCTION DE RENDU TIER LIST AMÉLIORÉE ---
     def render_tier_list_pro(df_filtre, tiers, key_prefix):
@@ -744,72 +912,192 @@ if not df.empty:
 
         df_filtre = df[df['ecoute'] == True].copy()
 
+        # Nettoyage de la colonne année pour le curseur
+        if not df_filtre.empty:
+            df_filtre['annee_propre'] = pd.to_numeric(df_filtre['annee'], errors='coerce').fillna(date.today().year).astype(int)
+        
         # --- 🎛️ PANNEAU DE CONTRÔLE DES FILTRES ---
         with st.container(border=True):
             st.markdown("### 🎛️ Filtres Avancés")
-            c_type, c_gen, c_pays, c_tri = st.columns(4)
-            
+
+            # LIGNE 1 : Recherche et Statuts
+            c_rech, c_statut, c_type = st.columns([2, 1, 1])
+            with c_rech:
+                rech_tl = st.text_input("🔍 Artiste ou Album", placeholder="Ex: Kanye West, Illmatic...")
+            with c_statut:
+                statut_choix = st.selectbox("📌 Statut", ["Tous 🌍", "🟢 Découvertes", "🔵 Classiques"])
             with c_type:
-                type_choix = st.selectbox("📌 Type d'album", ["Tous 🌍", "🟢 Découvertes", "🔵 Classiques"])
+                if 'type' in df.columns:
+                    type_choix = st.selectbox("🏷️ Catégorie", ["Toutes", "🎯 Officiel (365)", "➕ Hors-Série"])
+                else:
+                    type_choix = "Toutes"
+
+            # LIGNE 2 : Genres, Pays, Années, Tri
+            c_gen, c_pays, c_annee, c_tri = st.columns([1.5, 1.5, 1.5, 1])
             with c_gen:
                 genres_dispo = sorted(df_filtre['genre'].dropna().unique())
                 sel_genres = st.multiselect("🎵 Genre", genres_dispo, placeholder="Tous les genres")
             with c_pays:
                 pays_dispo = sorted(df_filtre['pays'].dropna().unique())
                 sel_pays = st.multiselect("🌍 Pays", pays_dispo, placeholder="Tous les pays")
+            with c_annee:
+                if not df_filtre.empty:
+                    min_annee = int(df_filtre['annee_propre'].min())
+                    max_annee = int(df_filtre['annee_propre'].max())
+                    if min_annee < max_annee:
+                        sel_annee = st.slider("📅 Période de sortie", min_value=min_annee, max_value=max_annee, value=(min_annee, max_annee))
+                    else:
+                        sel_annee = (min_annee, max_annee)
+                        st.info(f"Année unique : {min_annee}")
+                else:
+                    sel_annee = (1950, 2026)
             with c_tri:
-                ordre = st.selectbox("⬇️ Tri des notes", ["Décroissant (Meilleurs en haut)", "Croissant (Pires en haut)"])
-                
+                ordre = st.selectbox("⬇️ Tri", ["Décroissant (Meilleurs en haut)", "Croissant (Pires en bas)"])
+
         # --- ⚙️ APPLICATION DES FILTRES ---
-        if type_choix == "🟢 Découvertes":
-            df_filtre = df_filtre[df_filtre['deja_connu'] == False]
-        elif type_choix == "🔵 Classiques":
-            df_filtre = df_filtre[df_filtre['deja_connu'] == True]
-            
-        if sel_genres:
-            df_filtre = df_filtre[df_filtre['genre'].isin(sel_genres)]
-        if sel_pays:
-            df_filtre = df_filtre[df_filtre['pays'].isin(sel_pays)]
-            
+        if not df_filtre.empty:
+            # 1. Filtre textuel
+            if rech_tl:
+                mask_rech = df_filtre['artiste'].str.contains(rech_tl, case=False, na=False) | \
+                            df_filtre['album'].str.contains(rech_tl, case=False, na=False)
+                df_filtre = df_filtre[mask_rech]
+
+            # 2. Filtre Statut (Découverte/Classique)
+            if statut_choix == "🟢 Découvertes":
+                df_filtre = df_filtre[df_filtre['deja_connu'] == False]
+            elif statut_choix == "🔵 Classiques":
+                df_filtre = df_filtre[df_filtre['deja_connu'] == True]
+
+            # 3. Filtre Catégorie (Officiel/Hors-Série)
+            if type_choix == "🎯 Officiel (365)":
+                df_filtre = df_filtre[df_filtre['type'] != 'HORS-SÉRIE']
+            elif type_choix == "➕ Hors-Série":
+                df_filtre = df_filtre[df_filtre['type'] == 'HORS-SÉRIE']
+                
+            # 4. Filtre Genre & Pays
+            if sel_genres:
+                df_filtre = df_filtre[df_filtre['genre'].isin(sel_genres)]
+            if sel_pays:
+                df_filtre = df_filtre[df_filtre['pays'].isin(sel_pays)]
+
+            # 5. Filtre Année
+            df_filtre = df_filtre[(df_filtre['annee_propre'] >= sel_annee[0]) & (df_filtre['annee_propre'] <= sel_annee[1])]
+
         tiers_a_afficher = tiers_definitions if "Décroissant" in ordre else tiers_definitions[::-1]
-        
+
         st.write("")
-        # On utilise ta fonction render_tier_list_pro existante
+        # Rendu visuel
         render_tier_list_pro(df_filtre, tiers_a_afficher, "global")
 
-    # --- TAB 5 : LE MOTEUR DE RECHERCHE (ARCHIVES) ---
+    # --- TAB 5 : LE MOTEUR DE RECHERCHE ET D'ÉDITION (ARCHIVES) ---
     with tab5:
-        st.markdown("<h1 style='text-align:center; color:#17a2b8;'>🗄️ Les Archives de l'Odyssée</h1>", unsafe_allow_html=True)
-        st.write("Une base de données complète pour retrouver rapidement n'importe quel album prévu dans ton année.")
-
-        recherche = st.text_input("🔍 Rechercher un artiste, un album ou un pays...", placeholder="Ex: Kanye West, Illmatic, 🇨🇮...")
-
+        st.markdown("<h1 style='text-align:center; color:#17a2b8;'>🗄️ Le Centre d'Archives</h1>", unsafe_allow_html=True)
+        st.write("Le joyau de ton Odyssée. Retrouve tes albums, corrige tes erreurs ou sublime tes critiques.")
+        
+        # --- 1. MOTEUR DE RECHERCHE INTELLIGENT ---
+        recherche = st.text_input("🔍 Recherche instantanée...", placeholder="Ex: Daft Punk, France, Rap...")
+        
         df_display = df.copy()
-
-        # Filtre de recherche textuelle
         if recherche:
             mask = df_display['artiste'].str.contains(recherche, case=False, na=False) | \
                    df_display['album'].str.contains(recherche, case=False, na=False) | \
-                   df_display['pays'].str.contains(recherche, case=False, na=False)
+                   df_display['pays'].str.contains(recherche, case=False, na=False) | \
+                   df_display['genre'].str.contains(recherche, case=False, na=False)
             df_display = df_display[mask]
-            
+
+        df_sorted_alpha = df_display.sort_values(by="artiste")
+        options_dict = {f"{r.get('pays', '')} {r['artiste']} - {r['album']}": r.name for _, r in df_sorted_alpha.iterrows()}
+        
         st.write("")
-        # Tableau de données interactif
-        st.dataframe(
-            df_display[['date', 'artiste', 'album', 'genre', 'pays', 'note', 'ecoute']],
-            column_config={
-                "date": st.column_config.DateColumn("📅 Date Prévue", format="DD/MM/YYYY"),
-                "artiste": st.column_config.TextColumn("🎤 Artiste"),
-                "album": st.column_config.TextColumn("💿 Album"),
-                "genre": st.column_config.TextColumn("🎵 Genre"),
-                "pays": st.column_config.TextColumn("🌍 Pays"),
-                "note": st.column_config.NumberColumn("⭐ Note"),
-                "ecoute": st.column_config.CheckboxColumn("✅ Fait")
-            },
-            width='stretch',
-            hide_index=True,
-            height=600
-        )
+        choix_edit = st.selectbox("🎯 Sélectionne l'album à éditer parmi les résultats :", ["-- Tableau Général --"] + list(options_dict.keys()))
+        
+        # --- AFFICHAGE CONDITIONNEL (LA TOUCHE AOTY) ---
+        if choix_edit == "-- Tableau Général --":
+            # On affiche le tableau seulement si aucun album n'est en cours d'édition pour aérer l'écran
+            st.dataframe(
+                df_display[['date', 'artiste', 'album', 'genre', 'pays', 'note', 'ecoute']],
+                column_config={
+                    "date": st.column_config.DateColumn("📅 Date", format="DD/MM/YYYY"),
+                    "artiste": st.column_config.TextColumn("🎤 Artiste"),
+                    "album": st.column_config.TextColumn("💿 Album"),
+                    "genre": st.column_config.TextColumn("🎵 Genre"),
+                    "pays": st.column_config.TextColumn("🌍 Pays"),
+                    "note": st.column_config.NumberColumn("⭐ Note"),
+                    "ecoute": st.column_config.CheckboxColumn("✅ Fait")
+                },
+                width='stretch',
+                hide_index=True,
+                height=450 
+            )
+        else:
+            idx_sel = options_dict[choix_edit]
+            row_sel = df.loc[idx_sel]
+            
+            # --- 2. LE STUDIO D'ÉDITION ---
+            st.markdown("---")
+            
+            # Détermination du Glow en fonction de la note (Rouge pour AOTY, Orange pour GOAT, Bleu classique sinon)
+            try: note_actuelle = int(row_sel['note']) 
+            except: note_actuelle = 0
+            
+            glow_color = "rgba(239, 65, 53, 0.6)" if note_actuelle == 7 else ("rgba(255, 130, 0, 0.6)" if note_actuelle == 6 else "rgba(23, 162, 184, 0.3)")
+            
+            c_img, c_form = st.columns([1.2, 2.5])
+            
+            with c_img:
+                # Pochette avec effet Glow dynamique
+                cover_url = row_sel.get('cover_url', 'https://placehold.co/300x300/1E1E1E/FF8200?text=Musique')
+                st.markdown(f"""
+                    <div style="box-shadow: 0 0 30px {glow_color}; border-radius: 15px; overflow: hidden; margin-bottom: 15px;">
+                        <img src="{cover_url}" width="100%" style="display: block;">
+                    </div>
+                """, unsafe_allow_html=True)
+                
+                # Badges statuts et Bouton Reset
+                if row_sel['ecoute']:
+                    st.markdown(f"<div style='text-align:center; background: #009A44; padding: 10px; border-radius: 10px; color: white; margin-bottom: 10px;'><b>✅ ÉCOUTÉ ({note_actuelle}/5)</b></div>", unsafe_allow_html=True)
+                    if st.button("🔄 Annuler l'écoute", width='stretch'):
+                        df.at[idx_sel, 'ecoute'] = False
+                        df.at[idx_sel, 'note'] = 0
+                        df.at[idx_sel, 'avis'] = ""
+                        save_data(df)
+                        st.rerun()
+                else:
+                    st.markdown("<div style='text-align:center; background: #EF4135; padding: 10px; border-radius: 10px; color: white;'><b>⏳ EN ATTENTE</b></div>", unsafe_allow_html=True)
+                    
+            with c_form:
+                st.markdown(f"<h2 style='margin-bottom:0px;'>{row_sel['album']}</h2>", unsafe_allow_html=True)
+                st.markdown(f"<h4 style='color:gray; margin-top:0px;'>par {row_sel['artiste']}</h4>", unsafe_allow_html=True)
+                st.write("")
+                
+                note_max_sb = max(5, note_actuelle)
+                val_defaut = note_actuelle if note_actuelle > 0 else 4
+
+                with st.form(f"archive_form_{idx_sel}", border=False):
+                    s_note = st.slider("⭐ Note de l'album", 1, note_max_sb, val_defaut)
+                    s_avis = st.text_area("📝 Ton avis / Critique", value=str(row_sel.get('avis', '')), height=130)
+                    
+                    c_pays, c_connu = st.columns([1.5, 1])
+                    with c_pays:
+                        s_pays = st.text_input("🌍 Drapeau / Pays", value=str(row_sel.get('pays', '')))
+                    with c_connu:
+                        st.write("")
+                        st.write("")
+                        s_connu = st.checkbox("💿 Classique (Déjà connu)", value=bool(row_sel.get('deja_connu', False)))
+
+                    st.write("")
+                    btn_save = st.form_submit_button("💾 SAUVEGARDER L'ALBUM DANS LES ARCHIVES", width='stretch', type="primary")
+                        
+                    if btn_save:
+                        df.at[idx_sel, 'ecoute'] = True
+                        df.at[idx_sel, 'note'] = s_note
+                        df.at[idx_sel, 'avis'] = s_avis
+                        df.at[idx_sel, 'deja_connu'] = s_connu
+                        df.at[idx_sel, 'pays'] = s_pays
+                        save_data(df)
+                        st.balloons()
+                        time.sleep(1)
+                        st.rerun()
 
     with tab6:
         # ==========================================
@@ -855,7 +1143,7 @@ if not df.empty:
                     cols_nom = st.columns(min(len(candidats), 5))
                     for i, (idx, row) in enumerate(candidats.iterrows()):
                         with cols_nom[i % 5]:
-                            st.image(row['cover_url'], use_container_width=True)
+                            st.image(row['cover_url'], width='stretch')
                             st.caption(f"**{row['artiste']}**")
 
                     choix_goat = st.selectbox(
@@ -864,7 +1152,7 @@ if not df.empty:
                         format_func=lambda idx: f"💿 {df.loc[idx, 'artiste']} - {df.loc[idx, 'album']}"
                     )
                     
-                    if st.button("👑 COURONNER CET ALBUM", type="primary", use_container_width=True):
+                    if st.button("👑 COURONNER CET ALBUM", type="primary", width='stretch'):
                         df.at[choix_goat, 'note'] = 6
                         save_data(df)
                         st.balloons()
@@ -902,7 +1190,7 @@ if not df.empty:
                     choix_aoty = st.radio("Sélectionne le Dieu de la Musique 2026 :", goats_annuels.index, 
                                         format_func=lambda idx: f"🐐 {df.loc[idx, 'artiste']} - {df.loc[idx, 'album']}")
                     
-                    if st.button("🌟 SACRER L'ALBUM DE L'ANNÉE", type="primary", use_container_width=True):
+                    if st.button("🌟 SACRER L'ALBUM DE L'ANNÉE", type="primary", width='stretch'):
                         df.at[choix_aoty, 'note'] = 7
                         save_data(df)
                         st.balloons()
@@ -938,7 +1226,7 @@ if not df.empty:
                 df_cible = df_ecoutes_wrap[df_ecoutes_wrap['dt_obj'].dt.month == m_idx]
                 titre_wrap = f"Bilan de {mois_wrap}"
 
-            if st.button(f"✨ GÉNÉRER LE WRAPPED : {titre_wrap.upper()} ✨", use_container_width=True):
+            if st.button(f"✨ GÉNÉRER LE WRAPPED : {titre_wrap.upper()} ✨", width='stretch'):
                 if df_cible.empty:
                     st.warning("Aucune donnée pour cette période. Il faut écouter de la musique !")
                 else:
@@ -1014,7 +1302,7 @@ if not df.empty:
 </div>
 </div>
 """
-                    st.markdown(html_wrapped, unsafe_allow_html=True)
+                    st.markdown(html_wrapped.replace('\n', '').strip(), unsafe_allow_html=True)
     # ==========================================
     # ➕ TAB 7 : AJOUTER UN HORS-SÉRIE
     # ==========================================
@@ -1035,7 +1323,7 @@ if not df.empty:
                 st.write("---")
                 c_img, c_info = st.columns([1, 2])
                 with c_img:
-                    st.image(selected_album['images'][0]['url'], use_container_width=True)
+                    st.image(selected_album['images'][0]['url'], width='stretch')
                 with c_info:
                     st.markdown(f"### {selected_album['name']}")
                     st.markdown(f"**{selected_album['artists'][0]['name']}**")
@@ -1051,7 +1339,7 @@ if not df.empty:
                     hs_avis = st.text_area("Ton avis")
                     hs_connu = st.checkbox("Je connaissais déjà cet album")
 
-                    if st.form_submit_button("💾 Enregistrer dans l'Odyssée", use_container_width=True):
+                    if st.form_submit_button("💾 Enregistrer dans l'Odyssée", width='stretch'):
                         new_row = {
                             'date': hs_date_ecoute.isoformat(), # On utilise la date choisie !
                             'artiste': selected_album['artists'][0]['name'],
